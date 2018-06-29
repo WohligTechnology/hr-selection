@@ -1229,6 +1229,7 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 animation: true,
                 templateUrl: "views/modal/createEnquiry.html",
                 scope: $scope,
+                size: 'lg',
             });
         }
     });

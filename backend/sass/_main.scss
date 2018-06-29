@@ -21,6 +21,14 @@ $body-color-font: #505050;
     src: url("../fonts/glyphicons-halflings-regular.eot");
     src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
 
 button,
 div,
@@ -1134,6 +1142,7 @@ img.uploadingImage {
 
 body {
     overflow: visible !important;
+    font-family: Roboto;
 }
 
 .circle {
@@ -1222,7 +1231,7 @@ body {
     cursor: pointer;
     color: black;
     h2{
-        font-weight:bold;
+        font-family:Roboto-Bold;
     }
     &:hover{
         box-shadow: 0 10px 6px -6px #777;
