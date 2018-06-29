@@ -31174,6 +31174,14 @@ body {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px; }
 
+.categories {
+  cursor: pointer;
+  color: black; }
+  .categories h2 {
+    font-weight: bold; }
+  .categories:hover {
+    box-shadow: 0 10px 6px -6px #777; }
+
 /* Start writing sass here */
 #fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
   background-image: url(../img/fancybox_sprite.png); }

@@ -1211,10 +1211,24 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
             //  $rootScope.$apply();
         };
     })
-    .controller('SelectionCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state) {
+    .controller('insidedashboardCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state) {
         //Used to name the .html file
-        $scope.template = TemplateService.changecontent("selection");
-        $scope.menutitle = NavigationService.makeactive("selection");
+        $scope.template = TemplateService.changecontent("insidedashboard");
+        $scope.menutitle = NavigationService.makeactive("insidedashboard");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+    })
+    .controller('EnquiriesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state,$uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("enquiries");
+        $scope.menutitle = NavigationService.makeactive("enquiries");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.openModal = function () {
+            $scope.enquiryModal = $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/createEnquiry.html",
+                scope: $scope,
+            });
+        }
     });

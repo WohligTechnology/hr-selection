@@ -9,27 +9,32 @@ myApp.factory('NavigationService', function ($http) {
     var navigation = [{
         name: "Dashboard",
         classis: "active",
-        sref: "#!/page/viewUser//",
+        uisref: "insidedashboard",
         icon: "phone"
     },{
         name: "Enquiries",
         classis: "active",
-        uisref: "selection",
+        uisref: "enquiries",
         icon: "phone"
     },{
-        name: "Enquiries",
+        name: "Customers",
         classis: "active",
-        uisref: "selection",
+        uisref: "customers",
         icon: "phone"
     },{
-        name: "Enquiries",
+        name: "Sources",
         classis: "active",
-        uisref: "selection",
+        uisref: "sources",
         icon: "phone"
     },{
-        name: "Enquiries",
+        name: "Report",
         classis: "active",
-        uisref: "selection",
+        uisref: "report",
+        icon: "phone"
+    },{
+        name: "Profile DB",
+        classis: "active",
+        uisref: "profile",
         icon: "phone"
     }];
 

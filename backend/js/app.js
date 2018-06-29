@@ -30,10 +30,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             controller: 'DashboardCtrl',
         })
 
-        .state('selection', {
-            url: "/selection",
+        .state('insidedashboard', {
+            url: "/insidedashboard",
             templateUrl: "views/template.html",
-            controller: 'SelectionCtrl',
+            controller: 'insidedashboardCtrl',
+        })
+
+        .state('enquiries', {
+            url: "/enquiries",
+            templateUrl: "views/template.html",
+            controller: 'EnquiriesCtrl',
         })
 
         .state('login', {

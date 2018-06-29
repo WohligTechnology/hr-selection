@@ -1218,7 +1218,16 @@ body {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
+.categories{
+    cursor: pointer;
+    color: black;
+    h2{
+        font-weight:bold;
+    }
+    &:hover{
+        box-shadow: 0 10px 6px -6px #777;
+    }
+}
 /* Start writing sass here */
 
 @import "fancybox-override";
