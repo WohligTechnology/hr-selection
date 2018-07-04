@@ -1218,7 +1218,7 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
     })
-    .controller('EnquiriesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state,$uibModal) {
+    .controller('EnquiriesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("enquiries");
         $scope.menutitle = NavigationService.makeactive("enquiries");
@@ -1230,6 +1230,41 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 templateUrl: "views/modal/createEnquiry.html",
                 scope: $scope,
                 size: 'lg',
+            });
+        }
+        $scope.availableSkills=["angularJs","Javascript","HTML"];
+        $scope.availableSkills1=["angularJs","Javascript","HTML"];
+        $scope.availableSkills2=["angularJs","Javascript","HTML"];        
+    })
+    .controller('SourcesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state,$uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("sources");
+        $scope.menutitle = NavigationService.makeactive("sources");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.openSourcesModal = function () {
+            $scope.sourceModal = $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/sourceModal.html",
+                scope: $scope,
+                size: 'lg',
+            });
+        }
+        $scope.availableSkills=["angularJs","Javascript","HTML"];        
+    })
+    .controller('CustomersCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state,$uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("customers");
+        $scope.menutitle = NavigationService.makeactive("customers");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.openCustModal = function () {
+            $scope.customerModal = $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/customerModal.html",
+                scope: $scope,
+                size: 'lg',
+                windowClass: 'app-modal-window'
             });
         }
     });

@@ -21,10 +21,12 @@ $body-color-font: #505050;
     src: url("../fonts/glyphicons-halflings-regular.eot");
     src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
+
 @font-face {
     font-family: 'Roboto-Bold';
     src: url("../fonts/Roboto/Roboto-Bold.ttf");
@@ -1227,16 +1229,41 @@ body {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.categories{
+
+.categories {
     cursor: pointer;
     color: black;
-    h2{
-        font-family:Roboto-Bold;
+    h2 {
+        font-family: Roboto-Bold;
     }
-    &:hover{
+    &:hover {
         box-shadow: 0 10px 6px -6px #777;
     }
 }
+
+.table th {
+    font-size: 0.90rem;
+}
+
+.table td {
+    font-size: 0.85rem;
+}
+
+.ui-select-bootstrap.open .dropdown-menu {
+    display: block;
+}
+
+.ui-select-multiple.ui-select-bootstrap {
+    .btn {
+        padding: 0 0.75rem;
+        font-size: 12px;
+    }
+}
+
+.app-modal-window {
+    top: 35%;
+}
+
 /* Start writing sass here */
 
 @import "fancybox-override";

@@ -31,9 +31,42 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="skills" class="col-4 col-form-label">Skills : </label>
+        <label for="skills" class="col-4 col-form-label">Technical Must have Skills : </label>
         <div class="col-8">
-            <input class="form-control" type="input" id="skills">
+            <ui-select multiple ng-model="ctrl.multipleDemo.colors" theme="bootstrap" ng-disabled="ctrl.disabled" close-on-select="true"
+                title="Choose a Skill">
+                <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
+                <ui-select-choices repeat="skill in availableSkills">
+                    {{skill}}
+                </ui-select-choices>
+            </ui-select>
+            <!-- <input class="form-control" type="input" id="skills"> -->
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="skills" class="col-4 col-form-label">Technical good to have Skills : </label>
+        <div class="col-8">
+            <ui-select multiple ng-model="ctrl.multipleDemo.colors" theme="bootstrap" ng-disabled="ctrl.disabled" close-on-select="true"
+                title="Choose a color">
+                <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
+                <ui-select-choices repeat="skill in availableSkills1">
+                    {{skill}}
+                </ui-select-choices>
+            </ui-select>
+            <!-- <input class="form-control" type="input" id="skills"> -->
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="skills" class="col-4 col-form-label">Behavioural Skills : </label>
+        <div class="col-8">
+            <ui-select multiple ng-model="ctrl.multipleDemo.colors" theme="bootstrap" ng-disabled="ctrl.disabled" close-on-select="true"
+                title="Choose a color">
+                <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
+                <ui-select-choices repeat="skill in availableSkills2">
+                    {{skill}}
+                </ui-select-choices>
+            </ui-select>
+            <!-- <input class="form-control" type="input" id="skills"> -->
         </div>
     </div>
     <div class="form-group row">
@@ -46,7 +79,7 @@
             <option value="to3">2,00,000 to 3,00,000</option>
             <option value="to4">3,00,000 to 4,00,000</option>
             <option value="to4">Above 4,00,000</option>
-            </select> per annum 
+            </select> per annum
         </div>
     </div>
     <div class="form-group row">
@@ -56,11 +89,11 @@
         </div>
     </div>
     <div class="form-group row">
-            <label for="attachments" class="col-4 col-form-label">Attachments : </label>
-            <div class="col-8">
-                <input class="form-control" type="file" multiple>
-            </div>
+        <label for="attachments" class="col-4 col-form-label">Attachments : </label>
+        <div class="col-8">
+            <input class="form-control" type="file" multiple>
         </div>
+    </div>
     <div class="form-group row">
         <label for="comments" class="col-4 col-form-label">Comments : </label>
         <div class="col-8">
@@ -70,7 +103,7 @@
     <div class="form-group row">
         <label for="comments" class="col-4 col-form-label">Customer Panel : </label>
         <div class="col-8">
-                <textarea class="form-control" type="comments"></textarea>
+            <textarea class="form-control" type="comments"></textarea>
         </div>
     </div>
 </div>

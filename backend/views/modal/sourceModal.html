@@ -1,0 +1,44 @@
+<div class="p-4">
+    <div class="form-group row">
+        <label for="compname" class="col-4 col-form-label">Company Name : </label>
+        <div class="col-8">
+            <input name="compname" class="form-control" type="text" placeholder="Enter Company Name">
+        </div>
+    </div>
+    <div class="form-group row">
+            <label for="pername" class="col-4 col-form-label">Contact Person : </label>
+            <div class="col-8">
+                <input name="pername" class="form-control" type="text" placeholder="Enter Contact Person">
+            </div>
+        </div>
+    <div class="form-group row">
+        <label for="pername" class="col-4 col-form-label">Person Name : </label>
+        <div class="col-8">
+            <input name="pername" class="form-control" type="text" placeholder="Enter Your Name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="contact" class="col-4 col-form-label">Contact Number : </label>
+        <div class="col-8">
+            <input name="contact" class="form-control" type="number" placeholder="Enter Your Contact Number">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="email" class="col-4 col-form-label">Email ID : </label>
+        <div class="col-8">
+            <input name="email" class="form-control" type="email" placeholder="Enter Your Email">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="skills" class="col-4 col-form-label">Skills : </label>
+        <div class="col-8">
+                <ui-select multiple ng-model="ctrl.multipleDemo.colors" theme="bootstrap" ng-disabled="ctrl.disabled" close-on-select="true"
+                title="Choose a Skill">
+                <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
+                <ui-select-choices position='up' repeat="skill in availableSkills">
+                    {{skill}}
+                </ui-select-choices>
+            </ui-select>
+        </div>
+    </div>
+</div>

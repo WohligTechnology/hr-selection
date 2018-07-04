@@ -42,6 +42,18 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             controller: 'EnquiriesCtrl',
         })
 
+        .state('sources', {
+            url: "/sources",
+            templateUrl: "views/template.html",
+            controller: 'SourcesCtrl',
+        })
+
+        .state('customers', {
+            url: "/customers",
+            templateUrl: "views/template.html",
+            controller: 'CustomersCtrl',
+        })
+
         .state('login', {
             url: "/login",
             templateUrl: "views/login.html",
