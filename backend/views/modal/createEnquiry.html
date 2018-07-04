@@ -34,7 +34,7 @@
         <label for="skills" class="col-4 col-form-label">Technical Must have Skills : </label>
         <div class="col-8">
             <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
-                <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
+                <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
                 <ui-select-choices repeat="color in availableSkills | filter:$select.search">
                     {{color}}
                 </ui-select-choices>
@@ -46,7 +46,7 @@
         <label for="skills" class="col-4 col-form-label">Technical good to have Skills : </label>
         <div class="col-8">
             <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
-                <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
+                <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
                 <ui-select-choices repeat="color in availableSkills1 | filter:$select.search">
                     {{color}}
                 </ui-select-choices>
@@ -58,7 +58,7 @@
         <label for="skills" class="col-4 col-form-label">Behavioural Skills : </label>
         <div class="col-8">
             <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
-                <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
+                <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
                 <ui-select-choices repeat="color in availableSkills2 | filter:$select.search">
                     {{color}}
                 </ui-select-choices>
@@ -71,11 +71,11 @@
         <div class="col-8">
             <select>
             <option value="to1" disabled selected>Choose Here</option>
-            <option value="to1"> < 1,00,000</option>
-            <option value="to2">1,00,000 to 2,00,000</option>
-            <option value="to3">2,00,000 to 3,00,000</option>
-            <option value="to4">3,00,000 to 4,00,000</option>
-            <option value="to4">Above 4,00,000</option>
+            <option value="to1"> < 1 lakh &#8377;</option>
+            <option value="to2">1 lakh to 2 lakh &#8377;</option>
+            <option value="to3">2 lakh to 3 lakh &#8377;</option>
+            <option value="to4">3 lakh to 4 lakh &#8377;</option>
+            <option value="to4">Above 4 lakh &#8377;</option>
             </select> per annum
         </div>
     </div>
@@ -103,4 +103,5 @@
             <textarea class="form-control" type="comments"></textarea>
         </div>
     </div>
+    <div class="text-center"><button type="button" class="btn btn-primary mr-2">Submit</button><button type="button" class="btn btn-primary" ng-click="$dismiss()">Cancel</button></div>
 </div>

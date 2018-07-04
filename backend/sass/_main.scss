@@ -31,6 +31,24 @@ $body-color-font: #505050;
     font-family: 'Roboto-Bold';
     src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: 'Lora';
+    src: url("../fonts/Lora/Lora-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Lora-Bold';
+    src: url("../fonts/Lora/Lora-Bold.ttf");
+}
 
 button,
 div,
@@ -1144,7 +1162,7 @@ img.uploadingImage {
 
 body {
     overflow: visible !important;
-    font-family: Roboto;
+    font-family: Lora;
 }
 
 .circle {

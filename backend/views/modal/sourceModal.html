@@ -33,11 +33,12 @@
         <label for="skills" class="col-4 col-form-label">Skills : </label>
         <div class="col-8">
             <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
-                <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
+                <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
                 <ui-select-choices position='up' repeat="color in availableSkills | filter:$select.search">
                     {{color}}
                 </ui-select-choices>
             </ui-select>
         </div>
     </div>
+    <div class="text-center"><button type="button" class="btn btn-primary mr-2">Submit</button><button type="button" class="btn btn-primary" ng-click="$dismiss()">Cancel</button></div>
 </div>
