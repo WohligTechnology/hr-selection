@@ -23,24 +23,6 @@ $body-color-font: #505050;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url("../fonts/Roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'Roboto-Bold';
-    src: url("../fonts/Roboto/Roboto-Bold.ttf");
-}
-@font-face {
-    font-family: 'Lato';
-    src: url("../fonts/Lato/Lato-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'Lato-Bold';
-    src: url("../fonts/Lato/Lato-Bold.ttf");
-}
-@font-face {
     font-family: 'Lora';
     src: url("../fonts/Lora/Lora-Regular.ttf");
 }
@@ -1252,13 +1234,15 @@ body {
     cursor: pointer;
     color: black;
     h2 {
-        font-family: Roboto-Bold;
+        font-family: Lora-Bold;
     }
     &:hover {
         box-shadow: 0 10px 6px -6px #777;
     }
 }
-
+.font-Lato-Bold{
+    font-family: Lora-Bold;
+}
 .table th {
     font-size: 0.90rem;
 }
