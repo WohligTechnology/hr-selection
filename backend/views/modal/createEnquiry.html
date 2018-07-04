@@ -33,11 +33,10 @@
     <div class="form-group row">
         <label for="skills" class="col-4 col-form-label">Technical Must have Skills : </label>
         <div class="col-8">
-            <ui-select multiple ng-model="ctrl.multipleDemo.colors" theme="bootstrap" ng-disabled="ctrl.disabled" close-on-select="true"
-                title="Choose a Skill">
+            <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
                 <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
-                <ui-select-choices repeat="skill in availableSkills">
-                    {{skill}}
+                <ui-select-choices repeat="color in availableSkills | filter:$select.search">
+                    {{color}}
                 </ui-select-choices>
             </ui-select>
             <!-- <input class="form-control" type="input" id="skills"> -->
@@ -46,11 +45,10 @@
     <div class="form-group row">
         <label for="skills" class="col-4 col-form-label">Technical good to have Skills : </label>
         <div class="col-8">
-            <ui-select multiple ng-model="ctrl.multipleDemo.colors" theme="bootstrap" ng-disabled="ctrl.disabled" close-on-select="true"
-                title="Choose a color">
+            <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
                 <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
-                <ui-select-choices repeat="skill in availableSkills1">
-                    {{skill}}
+                <ui-select-choices repeat="color in availableSkills1 | filter:$select.search">
+                    {{color}}
                 </ui-select-choices>
             </ui-select>
             <!-- <input class="form-control" type="input" id="skills"> -->
@@ -59,11 +57,10 @@
     <div class="form-group row">
         <label for="skills" class="col-4 col-form-label">Behavioural Skills : </label>
         <div class="col-8">
-            <ui-select multiple ng-model="ctrl.multipleDemo.colors" theme="bootstrap" ng-disabled="ctrl.disabled" close-on-select="true"
-                title="Choose a color">
+            <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
                 <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
-                <ui-select-choices repeat="skill in availableSkills2">
-                    {{skill}}
+                <ui-select-choices repeat="color in availableSkills2 | filter:$select.search">
+                    {{color}}
                 </ui-select-choices>
             </ui-select>
             <!-- <input class="form-control" type="input" id="skills"> -->

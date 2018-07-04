@@ -6,11 +6,11 @@
         </div>
     </div>
     <div class="form-group row">
-            <label for="pername" class="col-4 col-form-label">Contact Person : </label>
-            <div class="col-8">
-                <input name="pername" class="form-control" type="text" placeholder="Enter Contact Person">
-            </div>
+        <label for="pername" class="col-4 col-form-label">Contact Person : </label>
+        <div class="col-8">
+            <input name="pername" class="form-control" type="text" placeholder="Enter Contact Person">
         </div>
+    </div>
     <div class="form-group row">
         <label for="pername" class="col-4 col-form-label">Person Name : </label>
         <div class="col-8">
@@ -32,11 +32,10 @@
     <div class="form-group row">
         <label for="skills" class="col-4 col-form-label">Skills : </label>
         <div class="col-8">
-                <ui-select multiple ng-model="ctrl.multipleDemo.colors" theme="bootstrap" ng-disabled="ctrl.disabled" close-on-select="true"
-                title="Choose a Skill">
+            <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
                 <ui-select-match placeholder="Select Skills...">{{$item}}</ui-select-match>
-                <ui-select-choices position='up' repeat="skill in availableSkills">
-                    {{skill}}
+                <ui-select-choices position='up' repeat="color in availableSkills | filter:$select.search">
+                    {{color}}
                 </ui-select-choices>
             </ui-select>
         </div>
