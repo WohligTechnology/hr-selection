@@ -50631,7 +50631,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             controller: 'JagzCtrl'
         });
 
-    $urlRouterProvider.otherwise("/insidedashboard");
+    $urlRouterProvider.otherwise("/dashboard");
     $locationProvider.html5Mode(isproduction);
 });
 
