@@ -2,13 +2,13 @@
     <div class="form-group row">
         <label for="example-text-input" class="col-4 col-form-label">Name : </label>
         <div class="col-8">
-            <input class="form-control" type="text" placeholder="Enter your Name">
+            <input class="form-control height35" type="text" placeholder="Enter your Name">
         </div>
     </div>
     <div class="form-group row">
         <label for="example-date-input" class="col-4 col-form-label">Target Date : </label>
         <div class="col-8">
-            <input class="form-control" type="date" id="example-date-input">
+            <input class="form-control height35" type="date" id="example-date-input">
         </div>
     </div>
     <div class="form-group row">
@@ -27,7 +27,7 @@
     <div class="form-group row">
         <label for="employees" class="col-4 col-form-label">No. of Employees Required : </label>
         <div class="col-2">
-            <input class="form-control" type="input" id="example-search-input">
+            <input class="form-control w-75 height35" type="text" id="example-search-input">
         </div>
     </div>
     <div class="form-group row">
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="skills" class="col-4 col-form-label">Technical good to have Skills : </label>
+        <label for="skills" class="col-4 col-form-label">Technical good to have Skills:</label>
         <div class="col-8">
             <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
                 <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
@@ -67,40 +67,40 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="example-text-input" class="col-4 col-form-label">Salary Range : </label>
+        <label for="example-text-input" class="col-4 col-form-label">Annual Salary : </label>
         <div class="col-8">
             <select>
             <option value="to1" disabled selected>Choose Here</option>
-            <option value="to1"> < 1 lakh &#8377;</option>
-            <option value="to2">1 lakh to 2 lakh &#8377;</option>
-            <option value="to3">2 lakh to 3 lakh &#8377;</option>
-            <option value="to4">3 lakh to 4 lakh &#8377;</option>
-            <option value="to4">Above 4 lakh &#8377;</option>
-            </select> per annum
+            <option value="to1">INR < 1,00,000 </option>
+            <option value="to2">INR 1,00,000 - 2,00,000</option>
+            <option value="to3">INR 2,00,000 - 3,00,000</option>
+            <option value="to4">INR 3,00,000 - 4,00,000</option>
+            <option value="to4">INR Above 4,00,000</option>
+            </select> 
         </div>
     </div>
     <div class="form-group row">
         <label for="example-date-input" class="col-4 col-form-label">Date of Enquiry : </label>
         <div class="col-8">
-            <input class="form-control" type="date" id="example-date-input">
+            <input class="form-control height35" type="date" id="example-date-input">
         </div>
     </div>
     <div class="form-group row">
         <label for="attachments" class="col-4 col-form-label">Attachments : </label>
         <div class="col-8">
-            <input class="form-control" type="file" multiple>
+            <input class="form-control height35" type="file" multiple>
         </div>
     </div>
     <div class="form-group row">
         <label for="comments" class="col-4 col-form-label">Comments : </label>
         <div class="col-8">
-            <textarea class="form-control" type="comments"></textarea>
+            <textarea class="form-control height35" type="comments"></textarea>
         </div>
     </div>
     <div class="form-group row">
         <label for="comments" class="col-4 col-form-label">Customer Panel : </label>
         <div class="col-8">
-            <textarea class="form-control" type="comments"></textarea>
+            <textarea class="form-control height35" type="comments"></textarea>
         </div>
     </div>
     <div class="text-center"><button type="button" class="btn btn-primary mr-2">Submit</button><button type="button" class="btn btn-primary" ng-click="$dismiss()">Cancel</button></div>
