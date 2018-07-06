@@ -1259,6 +1259,7 @@ body {
 
 .table td {
     font-size: 0.82rem;
+    cursor: pointer;
 }
 
 .ui-select-bootstrap.open .dropdown-menu {
@@ -1282,6 +1283,10 @@ body {
 .enquiry-btn {
     width: 10rem;
     font-size: 1rem;
+}
+
+.bg-purple {
+    background: rgb(213, 0, 249);
 }
 
 .bg-pink {
