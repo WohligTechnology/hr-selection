@@ -1291,4 +1291,39 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 size: 'lg',
             });
         }
+        $scope.openSettingsModal = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/settings.html",
+                scope: $scope,
+                size: 'md',
+
+            });
+        }
+        $scope.scheduleInterview = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/schedule.html",
+                scope: $scope,
+                size: 'md',
+
+            });
+        }
+        $scope.selectedprofileModal = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/selected-profile.html",
+                scope: $scope,
+                size: 'lg',
+            });
+        }
+        $scope.interviewModal = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/interview-schedule-result.html",
+                scope: $scope,
+                size: 'md',
+            });
+        }
+        $scope.rounds = ["Online", "Telephonic", "Face to Face", "Client Introduction"];
     });
