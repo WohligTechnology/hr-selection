@@ -1,3 +1,9 @@
+<div class="modal-header position-relative">
+    <h4 class="modal-title">Sources</h4>
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+            <i class="fas fa-times"></i>
+        </a>
+</div>
 <div class="p-4">
     <div class="form-group row">
         <label for="compname" class="col-4 col-form-label">Company Name : </label>
@@ -20,7 +26,7 @@
     <div class="form-group row">
         <label for="contact" class="col-4 col-form-label">Contact Number : </label>
         <div class="col-8">
-            <input name="contact" class="form-control height35" type="number" placeholder="Enter Your Contact Number">
+            <input name="contact" class="form-control height35 number" type="number" placeholder="Enter Your Contact Number">
         </div>
     </div>
     <div class="form-group row">
@@ -32,7 +38,8 @@
     <div class="form-group row">
         <label for="skills" class="col-4 col-form-label">Skills : </label>
         <div class="col-8">
-            <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" title="Choose a skill">
+            <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true"
+                ng-disabled="ctrl.disabled" title="Choose a skill">
                 <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
                 <ui-select-choices position='up' repeat="color in availableSkills | filter:$select.search">
                     {{color}}

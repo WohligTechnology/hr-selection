@@ -1358,6 +1358,10 @@ body {
     }
     .plus {}
 }
-
+.number::-webkit-inner-spin-button, 
+.number::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 @import "fancybox-override";
 @import "other/mobile";

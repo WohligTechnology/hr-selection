@@ -23,7 +23,7 @@
         <div class="form-group">
             <label for="age">
                 <i class="far fa-calendar-alt mr-1"></i> Age</label>
-            <input type="number" name="age" ng-model="data.age" class="form-control" id="age" placeholder="Age" min="18" max="50" required>
+            <input type="number" name="age" ng-model="data.age" class="form-control number" id="age" placeholder="Age" min="18" max="50" required>
             <div class="pull-right" ng-repeat="(field,value) in formData.age.$error" ng-show="formData.age.$touched">
                 <span class="label label-danger" ng-if="field=='required' && value">Please Enter Age</span>
                 <span class="label label-danger" ng-if="field=='min' && value">Age should be greater than 18</span>
