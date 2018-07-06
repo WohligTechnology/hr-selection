@@ -1274,4 +1274,22 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
         $scope.menutitle = NavigationService.makeactive("Enquiryinside");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+        $scope.detailsModal = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/detailmodal.html",
+                scope: $scope,
+                size: 'md',
+
+            });
+        }
+        $scope.createprofileModal = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/create-profile.html",
+                scope: $scope,
+                size: 'md',
+
+            });
+        }
     });

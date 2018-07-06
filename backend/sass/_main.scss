@@ -1280,7 +1280,7 @@ body {
 
 //scss for Enquiry Page
 .enquiry-btn {
-    width: 12rem;
+    width: 10rem;
     font-size: 1rem;
 }
 
@@ -1306,6 +1306,15 @@ body {
 
 .bg-grey {
     background: rgb(96, 125, 139);
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.close-modal {
+    top: 5px;
+    right: 5px;
 }
 
 @import "fancybox-override";
