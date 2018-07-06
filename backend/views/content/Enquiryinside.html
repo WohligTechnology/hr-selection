@@ -1,7 +1,7 @@
 <div class="enquiry-inside">
     <div class="row">
         <div class="col-9">
-            <div class="d-none">
+            <div class="Add Profile" ng-if="profile">
                 <div>
                     <a type="button" class="btn-primary text-black" ng-click="createprofileModal();">Create profile</a>
                 </div>
@@ -76,11 +76,12 @@
                     </tbody>
                 </table>
             </div>
-            <div>
+            <div class="interview-schedule" ng-if="interviewSchedule">
                 <a type="button" class="btn-primary my-3" ng-click="scheduleInterview();">Schedule Interview</a>
                 <div class="row">
                     <div class="col-4 mb-4">
-                        <h6 class="text-center">12<sup>th</sup> July , 2018</h6>
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
                         <div class="border-black bg-gray-shade p-1">
                             <div class="row no-gutters">
                                 <div class="col-5">Name: </div>
@@ -95,7 +96,8 @@
                         </div>
                     </div>
                     <div class="col-4 mb-4">
-                        <h6 class="text-center">12<sup>th</sup> July , 2018</h6>
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
                         <div class="border-black p-1">
                             <div class="row no-gutters">
                                 <div class="col-5">Name: </div>
@@ -110,7 +112,8 @@
                         </div>
                     </div>
                     <div class="col-4 mb-4">
-                        <h6 class="text-center">12<sup>th</sup> July , 2018</h6>
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
                         <div class="border-black p-1">
                             <div class="row no-gutters">
                                 <div class="col-5">Name: </div>
@@ -125,7 +128,8 @@
                         </div>
                     </div>
                     <div class="col-4 mb-4">
-                        <h6 class="text-center">12<sup>th</sup> July , 2018</h6>
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
                         <div class="border-black p-1">
                             <div class="row no-gutters">
                                 <div class="col-5">Name: </div>
@@ -140,7 +144,8 @@
                         </div>
                     </div>
                     <div class="col-4 mb-4">
-                        <h6 class="text-center">12<sup>th</sup> July , 2018</h6>
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
                         <div class="border-black p-1">
                             <div class="row no-gutters">
                                 <div class="col-5">Name: </div>
@@ -155,7 +160,8 @@
                         </div>
                     </div>
                     <div class="col-4 mb-4">
-                        <h6 class="text-center">12<sup>th</sup> July , 2018</h6>
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
                         <div class="border-black p-1">
                             <div class="row no-gutters">
                                 <div class="col-5">Name: </div>
@@ -171,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <div class="interview-result">
+            <div class="interview-result" ng-if="interviewResult">
                 <h6 class="text-center">Interview Results</h6>
                 <table class="table table-striped mt-3">
                     <thead>
@@ -220,7 +226,7 @@
         <div class="col-3 d-flex justify-content-end">
             <ul class="list-unstyled">
                 <li>
-                    <a type="button" class="enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-pink text-white">Add Profiles</a>
+                    <a type="button" class="enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-pink text-white" ng-click="profileOpen();">Add Profiles</a>
                 </li>
                 <li>
                     <a ng-click="openSettingsModal()" type="button" class="enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-blue text-white">Settings</a>

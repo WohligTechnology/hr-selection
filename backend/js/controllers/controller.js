@@ -1318,12 +1318,31 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
             });
         }
         $scope.interviewModal = function () {
-            $uibModal.open({
+            $scope.interviewModal1 = $uibModal.open({
                 animation: true,
                 templateUrl: "views/modal/interview-schedule-result.html",
                 scope: $scope,
                 size: 'md',
             });
         }
+        $scope.profile = true;
+        $scope.profileOpen = function () {
+            $scope.profile = true;
+            $scope.interviewResult = false;
+            $scope.interviewSchedule = false;
+        }
+        $scope.interviewScheduleOpen = function () {
+            $scope.interviewSchedule = true;
+            $scope.profile = false;
+            $scope.interviewResult = false;
+            $scope.interviewModal1.dismiss();
+        }
+        $scope.interviewResultOpen = function () {
+            $scope.interviewResult = true;
+            $scope.profile = false;
+            $scope.interviewSchedule = false;
+            $scope.interviewModal1.dismiss();
+        }
+
         $scope.rounds = ["Online", "Telephonic", "Face to Face", "Client Introduction"];
     });
