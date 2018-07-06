@@ -1288,8 +1288,7 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 animation: true,
                 templateUrl: "views/modal/create-profile.html",
                 scope: $scope,
-                size: 'md',
-
+                size: 'lg',
             });
         }
     });

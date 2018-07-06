@@ -1,123 +1,135 @@
+<div class="modal-header position-relative">
+    <h4 class="modal-title">Create Enquiry</h4>
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+        <i class="far fa-times-circle"></i>
+    </a>
+</div>
 <div class="p-4">
-    <div class="form-group row">
-        <label for="example-text-input" class="col-4 col-form-label">Name : </label>
-        <div class="col-8">
-            <input class="form-control height35" type="text" placeholder="Enter your Name">
+    <form>
+        <div class="form-group row">
+            <label for="example-text-input" class="col-4 col-form-label">Name : </label>
+            <div class="col-8">
+                <input class="form-control height35" type="text" placeholder="Enter your Name">
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="example-date-input" class="col-4 col-form-label">Target Date : </label>
-        <div class="col-8">
-            <input class="form-control height35" type="date" id="example-date-input">
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Target Date : </label>
+            <div class="col-8">
+                <input class="form-control height35" type="date" id="example-date-input">
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="example-text-input" class="col-4 col-form-label">Years of Experience : </label>
-        <div class="col-8">
-            <select>
-            <option value="to1" disabled selected>Choose Here</option>
-            <option value="to1">0-1</option>
-            <option value="to2">1-2</option>
-            <option value="to3">2-3</option>
-            <option value="to4">3-4</option>
-            <option value="to4">Above 10</option>
-            </select> years
+        <div class="form-group row">
+            <label for="example-text-input" class="col-4 col-form-label">Years of Experience : </label>
+            <div class="col-8">
+                <select>
+                    <option value="to1" disabled selected>Choose Here</option>
+                    <option value="to1">0-1</option>
+                    <option value="to2">1-2</option>
+                    <option value="to3">2-3</option>
+                    <option value="to4">3-4</option>
+                    <option value="to4">Above 10</option>
+                </select> years
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="employees" class="col-4 col-form-label">No. of Employees Required : </label>
-        <div class="col-2">
-            <input class="form-control w-75 height35" type="text" id="example-search-input">
+        <div class="form-group row">
+            <label for="employees" class="col-4 col-form-label">No. of Employees Required : </label>
+            <div class="col-2">
+                <input class="form-control w-75 height35" type="text" id="example-search-input">
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="skills" class="col-4 col-form-label">Technical Must have Skills : </label>
-        <div class="col-8">
-            <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true"
-                ng-disabled="ctrl.disabled" title="Choose a skill">
-                <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
-                <ui-select-choices repeat="color in availableSkills | filter:$select.search">
-                    {{color}}
-                </ui-select-choices>
-            </ui-select>
-            <!-- <input class="form-control" type="input" id="skills"> -->
+        <div class="form-group row">
+            <label for="skills" class="col-4 col-form-label">Technical Must have Skills : </label>
+            <div class="col-8">
+                <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true"
+                    ng-disabled="ctrl.disabled" title="Choose a skill">
+                    <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
+                    <ui-select-choices repeat="color in availableSkills | filter:$select.search">
+                        {{color}}
+                    </ui-select-choices>
+                </ui-select>
+                <!-- <input class="form-control" type="input" id="skills"> -->
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="skills" class="col-4 col-form-label">Technical good to have Skills:</label>
-        <div class="col-8">
-            <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true"
-                ng-disabled="ctrl.disabled" title="Choose a skill">
-                <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
-                <ui-select-choices repeat="color in availableSkills1 | filter:$select.search">
-                    {{color}}
-                </ui-select-choices>
-            </ui-select>
-            <!-- <input class="form-control" type="input" id="skills"> -->
+        <div class="form-group row">
+            <label for="skills" class="col-4 col-form-label">Technical good to have Skills:</label>
+            <div class="col-8">
+                <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true"
+                    ng-disabled="ctrl.disabled" title="Choose a skill">
+                    <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
+                    <ui-select-choices repeat="color in availableSkills1 | filter:$select.search">
+                        {{color}}
+                    </ui-select-choices>
+                </ui-select>
+                <!-- <input class="form-control" type="input" id="skills"> -->
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="skills" class="col-4 col-form-label">Behavioural Skills : </label>
-        <div class="col-8">
-            <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true"
-                ng-disabled="ctrl.disabled" title="Choose a skill">
-                <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
-                <ui-select-choices repeat="color in availableSkills2 | filter:$select.search">
-                    {{color}}
-                </ui-select-choices>
-            </ui-select>
-            <!-- <input class="form-control" type="input" id="skills"> -->
+        <div class="form-group row">
+            <label for="skills" class="col-4 col-form-label">Behavioural Skills : </label>
+            <div class="col-8">
+                <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true"
+                    ng-disabled="ctrl.disabled" title="Choose a skill">
+                    <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
+                    <ui-select-choices repeat="color in availableSkills2 | filter:$select.search">
+                        {{color}}
+                    </ui-select-choices>
+                </ui-select>
+                <!-- <input class="form-control" type="input" id="skills"> -->
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="example-text-input" class="col-4 col-form-label">Annual Salary : </label>
-        <div class="col-8">
-            <label class="radio-inline pr-4">
-                        <input type="radio" name="optradio" class="mr-1">Indian Rupees
-                      </label>
-            <label class="radio-inline pr-4">
-                        <input type="radio" name="optradio" class="mr-1">US Dollars
-                      </label>
-            <label class="radio-inline">
-                        <input type="radio" name="optradio" class="mr-1">GBP
-                      </label><br>
-            From : <select>
-            <option value="to1" disabled selected>From</option>
-            <option value="to2">INR 1,00,000 </option>
-            <option value="to3">INR 2,00,000</option>
-            <option value="to4">INR 3,00,000</option>
-            </select>&nbsp;&nbsp;&nbsp;
-            To : <select>
+        <div class="form-group row">
+            <label for="example-text-input" class="col-4 col-form-label">Annual Salary : </label>
+            <div class="col-8">
+                <label class="radio-inline pr-4">
+                    <input type="radio" name="optradio" class="mr-1">Indian Rupees
+                </label>
+                <label class="radio-inline pr-4">
+                    <input type="radio" name="optradio" class="mr-1">US Dollars
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" class="mr-1">GBP
+                </label>
+                <br> From :
+                <select>
+                    <option value="to1" disabled selected>From</option>
+                    <option value="to2">INR 1,00,000 </option>
+                    <option value="to3">INR 2,00,000</option>
+                    <option value="to4">INR 3,00,000</option>
+                </select>&nbsp;&nbsp;&nbsp; To :
+                <select>
                     <option value="to1" disabled selected>To</option>
                     <option value="to2">INR 2,00,000</option>
                     <option value="to3">INR 3,00,000</option>
                     <option value="to4">INR 4,00,000</option>
-                    </select>
+                </select>
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="example-date-input" class="col-4 col-form-label">Date of Enquiry : </label>
-        <div class="col-8">
-            <input class="form-control height35" type="date" id="example-date-input">
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Date of Enquiry : </label>
+            <div class="col-8">
+                <input class="form-control height35" type="date" id="example-date-input">
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="attachments" class="col-4 col-form-label">Attachments : </label>
-        <div class="col-8">
-            <input class="form-control" type="file" multiple>
+        <div class="form-group row">
+            <label for="attachments" class="col-4 col-form-label">Attachments : </label>
+            <div class="col-8">
+                <input class="form-control" type="file" multiple>
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="comments" class="col-4 col-form-label">Comments : </label>
-        <div class="col-8">
-            <textarea class="form-control" type="comments"></textarea>
+        <div class="form-group row">
+            <label for="comments" class="col-4 col-form-label">Comments : </label>
+            <div class="col-8">
+                <textarea class="form-control" type="comments"></textarea>
+            </div>
         </div>
-    </div>
-    <div class="form-group row">
-        <label for="comments" class="col-4 col-form-label">Customer Panel : </label>
-        <div class="col-8">
-            <textarea class="form-control" type="comments"></textarea>
+        <div class="form-group row">
+            <label for="comments" class="col-4 col-form-label">Customer Panel : </label>
+            <div class="col-8">
+                <textarea class="form-control" type="comments"></textarea>
+            </div>
         </div>
-    </div>
-    <div class="text-center"><button type="button" class="btn btn-primary mr-2">Submit</button><button type="button" class="btn btn-primary" ng-click="$dismiss()">Cancel</button></div>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary mr-2">Submit</button>
+            <button type="button" class="btn btn-primary" ng-click="$dismiss()">Cancel</button>
+        </div>
+    </form>
 </div>

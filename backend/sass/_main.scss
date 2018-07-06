@@ -1322,5 +1322,11 @@ body {
     right: 5px;
 }
 
+.create-profile {
+    .form-group {
+        margin-bottom: 0.5rem;
+    }
+}
+
 @import "fancybox-override";
 @import "other/mobile";
