@@ -53,7 +53,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: "views/template.html",
             controller: 'CustomersCtrl',
         })
-
+        .state('enquiryinside', {
+            url: "/enquiryinside",
+            templateUrl: "views/template.html",
+            controller: 'EnquiryinsideCtrl',
+        })
         .state('login', {
             url: "/login",
             templateUrl: "views/login.html",

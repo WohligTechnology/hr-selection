@@ -11,30 +11,35 @@ myApp.factory('NavigationService', function ($http) {
         classis: "active",
         uisref: "insidedashboard",
         icon: "phone"
-    },{
+    }, {
         name: "Enquiries",
         classis: "active",
         uisref: "enquiries",
         icon: "phone"
-    },{
+    }, {
         name: "Customers",
         classis: "active",
         uisref: "customers",
         icon: "phone"
-    },{
+    }, {
         name: "Sources",
         classis: "active",
         uisref: "sources",
         icon: "phone"
-    },{
+    }, {
         name: "Report",
         classis: "active",
         uisref: "report",
         icon: "phone"
-    },{
+    }, {
         name: "Profile DB",
         classis: "active",
         uisref: "profile",
+        icon: "phone"
+    }, {
+        name: "Enquiry Inside Page",
+        classis: "active",
+        uisref: "enquiryinside",
         icon: "phone"
     }];
 

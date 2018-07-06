@@ -1232,11 +1232,11 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 size: 'lg',
             });
         }
-        $scope.availableSkills=["angularJs","Javascript","HTML"];
-        $scope.availableSkills1=["angularJs","Javascript","HTML"];
-        $scope.availableSkills2=["angularJs","Javascript","HTML"];        
+        $scope.availableSkills = ["angularJs", "Javascript", "HTML"];
+        $scope.availableSkills1 = ["angularJs", "Javascript", "HTML"];
+        $scope.availableSkills2 = ["angularJs", "Javascript", "HTML"];
     })
-    .controller('SourcesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state,$uibModal) {
+    .controller('SourcesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("sources");
         $scope.menutitle = NavigationService.makeactive("sources");
@@ -1250,9 +1250,9 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 size: 'lg',
             });
         }
-        $scope.availableSkills=["angularJs","Javascript","HTML"];        
+        $scope.availableSkills = ["angularJs", "Javascript", "HTML"];
     })
-    .controller('CustomersCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state,$uibModal) {
+    .controller('CustomersCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("customers");
         $scope.menutitle = NavigationService.makeactive("customers");
@@ -1267,4 +1267,11 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 windowClass: 'app-modal-window'
             });
         }
+    })
+    .controller('EnquiryinsideCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("Enquiryinside");
+        $scope.menutitle = NavigationService.makeactive("Enquiryinside");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
     });

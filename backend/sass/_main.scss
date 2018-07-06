@@ -1240,15 +1240,19 @@ body {
         box-shadow: 0 10px 6px -6px #777;
     }
 }
-.height35{
+
+.height35 {
     height: 35px !important;
 }
-.btn-primary{
+
+.btn-primary {
     padding: .175rem .75rem !important;
 }
-.font-Lato-Bold{
+
+.font-Lato-Bold {
     font-family: Lora-Bold;
 }
+
 .table th {
     font-size: 0.85rem;
 }
@@ -1273,6 +1277,36 @@ body {
 }
 
 /* Start writing sass here */
+
+//scss for Enquiry Page
+.enquiry-btn {
+    width: 12rem;
+    font-size: 1rem;
+}
+
+.bg-pink {
+    background: rgb(245, 0, 107);
+}
+
+.bg-blue {
+    background: rgb(34, 34, 235);
+}
+
+.bg-green {
+    background: rgb(0, 200, 136);
+}
+
+.bg-red {
+    background: rgb(255, 23, 68);
+}
+
+.bg-orange {
+    background: rgb(255, 105, 0);
+}
+
+.bg-grey {
+    background: rgb(96, 125, 139);
+}
 
 @import "fancybox-override";
 @import "other/mobile";
