@@ -31276,6 +31276,12 @@ body {
   -webkit-appearance: none;
   margin: 0; }
 
+.screenshots-img {
+  height: 100px;
+  border: 1px solid grey;
+  padding: 1rem;
+  margin: 1rem 0; }
+
 #fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
   background-image: url(../img/fancybox_sprite.png); }
 
