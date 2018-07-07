@@ -1,7 +1,7 @@
 var globalfunction = {};
-myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state) {
+myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state) {
         //Used to name the .html file
-        $scope.template = TemplateService.changecontent("dashboard");
+        $scope.template = TemplateService.changecontent("dashboard-main");
         $scope.menutitle = NavigationService.makeactive("Dashboard");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
@@ -1211,10 +1211,10 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
             //  $rootScope.$apply();
         };
     })
-    .controller('insidedashboardCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state) {
+    .controller('DashboardCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state) {
         //Used to name the .html file
-        $scope.template = TemplateService.changecontent("insidedashboard");
-        $scope.menutitle = NavigationService.makeactive("insidedashboard");
+        $scope.template = TemplateService.changecontent("dashboard");
+        $scope.menutitle = NavigationService.makeactive("Dashboard");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
     })
@@ -1268,6 +1268,29 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
             });
         }
     })
+    .controller('InterviewscheduleCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("interview-schedule");
+        $scope.menutitle = NavigationService.makeactive("interview-schedule");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.openpersonalInteview = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/schedule-interview.html",
+                scope: $scope,
+                size: 'md',
+            });
+        }
+        $scope.Postponemodal = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/postpone-modal.html",
+                scope: $scope,
+                size: 'md',
+            });
+        }
+    })
     .controller('EnquiryinsideCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("Enquiryinside");
@@ -1300,15 +1323,7 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
 
             });
         }
-        $scope.scheduleInterview = function () {
-            $uibModal.open({
-                animation: true,
-                templateUrl: "views/modal/schedule.html",
-                scope: $scope,
-                size: 'md',
 
-            });
-        }
         $scope.selectedprofileModal = function () {
             $uibModal.open({
                 animation: true,
@@ -1317,15 +1332,7 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 size: 'lg',
             });
         }
-        $scope.interviewModal = function () {
-            $scope.interviewModal1 = $uibModal.open({
-                animation: true,
-                templateUrl: "views/modal/interview-schedule-result.html",
-                scope: $scope,
-                size: 'md',
-            });
-        }
-        $scope.openScreen=function(){
+        $scope.openScreen = function () {
             $uibModal.open({
                 animation: true,
                 templateUrl: "views/modal/screenshots.html",
@@ -1333,24 +1340,45 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
                 size: 'lg',
             });
         }
-        $scope.images=["img/screenshots/1.png","img/screenshots/2.png","img/screenshots/3.png","img/screenshots/4.png","img/screenshots/5.png","img/screenshots/6.png","img/screenshots/7.png","img/screenshots/8.png","img/screenshots/9.png","img/screenshots/10.png"];
-        $scope.profile = true;
-        $scope.profileOpen = function () {
-            $scope.profile = true;
-            $scope.interviewResult = false;
-            $scope.interviewSchedule = false;
+        $scope.openChecklist = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/checklist-modal.html",
+                scope: $scope,
+                size: 'sm',
+            });
         }
-        $scope.interviewScheduleOpen = function () {
-            $scope.interviewSchedule = true;
-            $scope.profile = false;
-            $scope.interviewResult = false;
-            $scope.interviewModal1.dismiss();
+        $scope.openReject = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/reject-modal.html",
+                scope: $scope,
+                size: 'md',
+            });
         }
-        $scope.interviewResultOpen = function () {
-            $scope.interviewResult = true;
-            $scope.profile = false;
-            $scope.interviewSchedule = false;
-            $scope.interviewModal1.dismiss();
+        $scope.openSelect = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/select-modal.html",
+                scope: $scope,
+                size: 'md',
+            });
+        }
+        $scope.openpersonalInteview = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/personal-interview.html",
+                scope: $scope,
+                size: 'md',
+            });
+        }
+
+        $scope.images = ["img/screenshots/1.png", "img/screenshots/2.png", "img/screenshots/3.png", "img/screenshots/4.png", "img/screenshots/5.png", "img/screenshots/6.png", "img/screenshots/7.png", "img/screenshots/8.png", "img/screenshots/9.png", "img/screenshots/10.png"];
+
+        $scope.showView = "profile";
+        $scope.tabChange = function (tab) {
+            $scope.showView = tab;
+            console.log("tabtabtab", tab)
         }
         $scope.rounds = ["Online", "Telephonic", "Face to Face", "Client Introduction"];
     });

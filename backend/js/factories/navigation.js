@@ -9,7 +9,7 @@ myApp.factory('NavigationService', function ($http) {
     var navigation = [{
         name: "Dashboard",
         classis: "active",
-        uisref: "insidedashboard",
+        uisref: "dashboard",
         icon: "phone"
     }, {
         name: "Enquiries",
@@ -37,9 +37,9 @@ myApp.factory('NavigationService', function ($http) {
         uisref: "profile",
         icon: "phone"
     }, {
-        name: "Enquiry Inside Page",
+        name: "Interview Schedule",
         classis: "active",
-        uisref: "enquiryinside",
+        uisref: "interview-schedule",
         icon: "phone"
     }];
 

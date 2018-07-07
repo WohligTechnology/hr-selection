@@ -24,16 +24,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
     $httpProvider.defaults.withCredentials = true;
     $stateProvider
 
+        .state('dashboard-main', {
+            url: "/dashboard-main",
+            templateUrl: "views/template.html",
+            controller: 'DashboardmainCtrl',
+        })
+
         .state('dashboard', {
             url: "/dashboard",
             templateUrl: "views/template.html",
             controller: 'DashboardCtrl',
-        })
-
-        .state('insidedashboard', {
-            url: "/insidedashboard",
-            templateUrl: "views/template.html",
-            controller: 'insidedashboardCtrl',
         })
 
         .state('enquiries', {
@@ -114,9 +114,14 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/jagz",
             templateUrl: "views/jagz.html",
             controller: 'JagzCtrl'
+        })
+        .state('interview-schedule', {
+            url: "/interview-schedule",
+            templateUrl: "views/template.html",
+            controller: 'InterviewscheduleCtrl'
         });
 
-    $urlRouterProvider.otherwise("/insidedashboard");
+    $urlRouterProvider.otherwise("/dashboard");
     $locationProvider.html5Mode(isproduction);
 });
 

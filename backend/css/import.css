@@ -31262,6 +31262,7 @@ body {
   -webkit-box-shadow: 0px 3px 8px #646464;
   box-shadow: 0px 3px 8px #646464; }
 
+.interview-schedule-modal .form-group,
 .create-profile .form-group {
   margin-bottom: 0.5rem; }
 
@@ -31281,6 +31282,21 @@ body {
   border: 1px solid grey;
   padding: 1rem;
   margin: 1rem 0; }
+
+.addtask-btn:hover {
+  background: #f1f3f4;
+  border-radius: 20px; }
+
+.addtask-btn.fa-plus {
+  color: #4285f4 !important;
+  font-size: 1.5rem;
+  vertical-align: middle; }
+
+.pending-task:hover {
+  border-top: 1px solid grey;
+  -webkit-box-shadow: 0 4px 4px -2px #000000;
+  -moz-box-shadow: 0 4px 4px -2px #000000;
+  box-shadow: 0 4px 4px -2px #000000; }
 
 #fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
   background-image: url(../img/fancybox_sprite.png); }
