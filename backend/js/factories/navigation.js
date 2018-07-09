@@ -7,46 +7,54 @@ var uploadurl = imgurl;
 
 myApp.factory('NavigationService', function ($http) {
     var navigation = [{
-        name: "Dashboard",
-        classis: "active",
-        uisref: "dashboard",
-        icon: "phone"
-    }, {
-        name: "Enquiries",
-        classis: "active",
-        uisref: "enquiries",
-        icon: "phone"
-    }, {
-        name: "Customers",
-        classis: "active",
-        uisref: "customers",
-        icon: "phone"
-    }, {
-        name: "Sources",
-        classis: "active",
-        uisref: "sources",
-        icon: "phone"
-    }, {
-        name: "Report",
-        classis: "active",
-        uisref: "report",
-        icon: "phone"
-    }, {
-        name: "Profile DB",
-        classis: "active",
-        uisref: "profile",
-        icon: "phone"
-    }, {
-        name: "Interview Schedule",
-        classis: "active",
-        uisref: "interview-schedule",
-        icon: "phone"
-    }, {
-        name: "Type of Interview",
-        classis: "active",
-        uisref: "interview-type",
-        icon: "phone"
-    }];
+            name: "Dashboard",
+            classis: "active",
+            uisref: "dashboard",
+            icon: "phone"
+        },
+        // {
+        //     name: "Add Admin",
+        //     classis: "active",
+        //     uisref: "add-admin",
+        //     icon: "phone"
+        // },
+        {
+            name: "Enquiries",
+            classis: "active",
+            uisref: "enquiries",
+            icon: "phone"
+        }, {
+            name: "Customers",
+            classis: "active",
+            uisref: "customers",
+            icon: "phone"
+        }, {
+            name: "Sources",
+            classis: "active",
+            uisref: "sources",
+            icon: "phone"
+        }, {
+            name: "Report",
+            classis: "active",
+            uisref: "report",
+            icon: "phone"
+        }, {
+            name: "Profile DB",
+            classis: "active",
+            uisref: "profile",
+            icon: "phone"
+        }, {
+            name: "Interview Schedule",
+            classis: "active",
+            uisref: "interview-schedule",
+            icon: "phone"
+        }, {
+            name: "Type of Interview",
+            classis: "active",
+            uisref: "interview-type",
+            icon: "phone"
+        }
+    ];
 
     return {
         getnav: function () {

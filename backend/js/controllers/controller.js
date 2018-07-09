@@ -1268,6 +1268,13 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             });
         }
     })
+    .controller('AddadminCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("add-admin");
+        $scope.menutitle = NavigationService.makeactive("add-admin");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+    })
     .controller('InterviewscheduleCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("interview-schedule");
