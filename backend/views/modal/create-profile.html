@@ -54,8 +54,27 @@
         </div>
         <div class="form-group row">
             <label for="cctc" class="col-sm-5 col-form-label">Current CTC :</label>
-            <div class="col-sm-7 d-flex">
-                <div class="d-flex">
+            <div class="col-sm-7">
+                    <label class="radio-inline pr-4">
+                            <input type="radio" name="optradio" class="mr-1" required>Indian Rupees
+                        </label>
+                        <label class="radio-inline pr-4">
+                            <input type="radio" name="optradio" class="mr-1" required>US Dollars
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" class="mr-1" required>GBP
+                        </label>
+                        <div class="d-flex">
+                            <div class="d-flex w-25">
+                                From :
+                                <input class="form-control w-50 px-1 height35 ml-1 number" type="number" id="example-search-input" required>
+                            </div>
+                            <div class="d-flex w-25">
+                                to :
+                                <input class="form-control w-50 px-1 height35 ml-1 number" type="number" id="example-search-input" required>
+                            </div>
+                        </div>
+                <!-- <div class="d-flex">
                     <select class="form-control">
                         <option>1</option>
                         <option>2</option>
@@ -86,13 +105,13 @@
                         <option>Above 90</option>
                     </select>
                     <span class="px-2 align-self-end">Thousands</span>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="form-group row">
             <label for="ectc" class="col-sm-5 col-form-label">Expected CTC :</label>
-            <div class="col-sm-7 d-flex">
-                <div class="d-flex">
+            <div class="col-sm-7">
+                <!-- <div class="d-flex">
                     <select class="form-control">
                         <option>1</option>
                         <option>2</option>
@@ -123,11 +142,30 @@
                         <option>Above 90</option>
                     </select>
                     <span class="px-2 align-self-end">Thousands</span>
+                </div> -->
+                <label class="radio-inline pr-4">
+                    <input type="radio" name="optradio" class="mr-1" required>Indian Rupees
+                </label>
+                <label class="radio-inline pr-4">
+                    <input type="radio" name="optradio" class="mr-1" required>US Dollars
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" class="mr-1" required>GBP
+                </label>
+                <div class="d-flex">
+                    <div class="d-flex w-25">
+                        From :
+                        <input class="form-control w-50 px-1 height35 ml-1 number" type="number" id="example-search-input" required>
+                    </div>
+                    <div class="d-flex w-25">
+                        to :
+                        <input class="form-control w-50 px-1 height35 ml-1 number" type="number" id="example-search-input" required>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="form-group row">
-            <label for="company" class="col-sm-5 col-form-label">Company Name :</label>
+            <label for="company" class="col-sm-5 col-form-label">Recent Company Name :</label>
             <div class="col-sm-7">
                 <input type="text" class="form-control height35" id="company">
             </div>
