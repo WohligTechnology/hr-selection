@@ -115,10 +115,15 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: "views/jagz.html",
             controller: 'JagzCtrl'
         })
-        .state('interview-schedule', {
-            url: "/interview-schedule",
+        .state('schedule-interview', {
+            url: "/schedule-interview",
             templateUrl: "views/template.html",
             controller: 'InterviewscheduleCtrl'
+        })
+        .state('interview-type', {
+            url: "/interview-type",
+            templateUrl: "views/template.html",
+            controller: 'InterviewTypeCtrl'
         });
 
     $urlRouterProvider.otherwise("/dashboard");

@@ -1291,6 +1291,22 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             });
         }
     })
+    .controller('InterviewTypeCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("interview-type");
+        $scope.menutitle = NavigationService.makeactive("interview-type");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.openInterType = function () {
+            $scope.InterTypeModal = $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/interview-type.html",
+                scope: $scope,
+                size: 'lg',
+                windowClass: 'app-modal-window'
+            });
+        }
+    })
     .controller('EnquiryinsideCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("Enquiryinside");
@@ -1319,7 +1335,7 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
                 animation: true,
                 templateUrl: "views/modal/settings.html",
                 scope: $scope,
-                size: 'md',
+                size: 'lg',
 
             });
         }
