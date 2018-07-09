@@ -1282,6 +1282,14 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
                 size: 'md',
             });
         }
+        $scope.openInteviewdone = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/interview-done.html",
+                scope: $scope,
+                size: 'md',
+            });
+        }
         $scope.scheduleEditmodal = function () {
             $uibModal.open({
                 animation: true,

@@ -13,28 +13,13 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="example-date-input" class="col-4 col-form-label">Person Name : </label>
+            <label for="example-date-input" class="col-4 col-form-label">Name : </label>
             <div class="col-8">
-                <div class="form-control">
-                    <input class="form-control height35" type="text">
-                </div>
+
+                <input class="form-control height35" type="text">
 
             </div>
         </div>
-        <div class="form-group row">
-            <label for="example-date-input" class="col-4 col-form-label">Select Mode : </label>
-            <div class="col-8">
-                <select class="form-control">
-                    <option value="to1" disabled selected>Select Mode</option>
-                    <option value="to1">Online Test</option>
-                    <option value="to1">Skype Interview</option>
-                    <option value="to2">Telephonic</option>
-                    <option value="to3">Face to Face</option>
-                    <option value="to4">Client Introduction</option>
-                </select>
-            </div>
-        </div>
-
         <div class="form-group row">
             <label for="example-date-input" class="col-4 col-form-label">Time : </label>
             <div class="col-8">
@@ -54,15 +39,41 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="example-date-input" class="col-4 col-form-label"> Name Of Interviewer : </label>
+            <label for="example-date-input" class="col-4 col-form-label">Interviewer : </label>
             <div class="col-8">
                 <input class="form-control height35" type="text">
             </div>
         </div>
-        <div class="form-group">
-            <label for="feedback">Feedback:</label>
-            <textarea class="form-control" rows="3" id="feedback"></textarea>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Type : </label>
+            <div class="col-8">
+                <select class="form-control">
+                    <option value="to1" disabled selected>Type</option>
+                    <option value="to1">Online Test</option>
+                    <option value="to1">Skype Interview</option>
+                    <option value="to2">Telephonic</option>
+                    <option value="to3">Face to Face</option>
+                    <option value="to4">Client Introduction</option>
+                </select>
+            </div>
         </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Mode : </label>
+            <div class="col-8">
+                <select class="form-control">
+                    <option value="to1" disabled selected>Select Mode</option>
+                    <option value="to1">Online Test</option>
+                    <option value="to1">Skype Interview</option>
+                    <option value="to2">Telephonic</option>
+                    <option value="to3">Face to Face</option>
+                    <option value="to4">Client Introduction</option>
+                </select>
+            </div>
+        </div>
+
+
+
+
         <div class="text-center">
             <button type="button" class="btn btn-primary" ng-click="$dismiss()">Save</button>
         </div>
