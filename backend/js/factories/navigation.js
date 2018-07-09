@@ -41,7 +41,7 @@ myApp.factory('NavigationService', function ($http) {
         classis: "active",
         uisref: "interview-schedule",
         icon: "phone"
-    },{
+    }, {
         name: "Type of Interview",
         classis: "active",
         uisref: "interview-type",
