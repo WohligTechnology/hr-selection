@@ -53,6 +53,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: "views/template.html",
             controller: 'CustomersCtrl',
         })
+        .state('report', {
+            url: "/report",
+            templateUrl: "views/template.html",
+            controller: 'ReportCtrl',
+        })
+        .state('profile', {
+            url: "/profile",
+            templateUrl: "views/template.html",
+            controller: 'ProfileCtrl',
+        })
         .state('enquiryinside', {
             url: "/enquiryinside",
             templateUrl: "views/template.html",

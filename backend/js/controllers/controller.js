@@ -1236,7 +1236,7 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
         $scope.availableSkills1 = ["angularJs", "Javascript", "HTML"];
         $scope.availableSkills2 = ["angularJs", "Javascript", "HTML"];
     })
-    .controller('SourcesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+    .controller('SourcesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal,$window) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("sources");
         $scope.menutitle = NavigationService.makeactive("sources");
@@ -1251,6 +1251,33 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             });
         }
         $scope.availableSkills = ["angularJs", "Javascript", "HTML"];
+        $scope.Person = [
+            { Name: "John Hammond", Email: "john@gmail.com",Contact: 9819775693 },
+            ];
+
+        $scope.Add = function () {
+            console.log("add");
+            //Add the new item to the Array.
+            var person = {};
+            person.Name = $scope.Name;
+            person.Email = $scope.Email;
+            person.Contact = $scope.Contact;            
+            $scope.Person.push(person);
+
+            //Clear the TextBoxes.
+            $scope.Name = "";
+            $scope.Email = "";
+            $scope.Contact = "";
+        };
+
+        $scope.Remove = function (index) {
+            //Find the record using Index from Array.
+            var name = $scope.Person[index].Name;
+            if ($window.confirm("Do you want to delete: " + name)) {
+                //Remove the item from Array using Index.
+                $scope.Person.splice(index, 1);
+            }
+        }
     })
     .controller('CustomersCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
@@ -1327,6 +1354,28 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
                 scope: $scope,
                 size: 'lg',
                 windowClass: 'app-modal-window'
+            });
+        }
+    })
+    .controller('ReportCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("report");
+        $scope.menutitle = NavigationService.makeactive("report");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+    })
+    .controller('ProfileCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("profile");
+        $scope.menutitle = NavigationService.makeactive("profile");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.openRetag = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/enter-enquiry.html",
+                scope: $scope,
+                size: 'md',
             });
         }
     })

@@ -12,12 +12,12 @@ myApp.factory('NavigationService', function ($http) {
             uisref: "dashboard",
             icon: "phone"
         },
-        // {
-        //     name: "Add Admin",
-        //     classis: "active",
-        //     uisref: "add-admin",
-        //     icon: "phone"
-        // },
+        {
+            name: "Add Admin",
+            classis: "active",
+            uisref: "add-admin",
+            icon: "phone"
+        },
         {
             name: "Enquiries",
             classis: "active",
