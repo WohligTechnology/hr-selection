@@ -1301,6 +1301,14 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
         $scope.menutitle = NavigationService.makeactive("add-admin");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+        $scope.opencreateAdmin = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/create-admin.html",
+                scope: $scope,
+                size: 'lg',
+            });
+        }
     })
     .controller('InterviewscheduleCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
