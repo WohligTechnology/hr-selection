@@ -10,49 +10,49 @@ myApp.factory('NavigationService', function ($http) {
             name: "Dashboard",
             classis: "active",
             uisref: "dashboard",
-            icon: "phone"
+            // icon: "phone"
         },
         {
             name: "Add Admin",
             classis: "active",
             uisref: "add-admin",
-            icon: "phone"
+            // icon: "phone"
         },
         {
             name: "Enquiries",
             classis: "active",
             uisref: "enquiries",
-            icon: "phone"
+            // icon: "phone"
         }, {
             name: "Customers",
             classis: "active",
             uisref: "customers",
-            icon: "phone"
+            // icon: "phone"
         }, {
             name: "Sources",
             classis: "active",
             uisref: "sources",
-            icon: "phone"
+            // icon: "phone"
         }, {
             name: "Report",
             classis: "active",
             uisref: "report",
-            icon: "phone"
+            // icon: "phone"
         }, {
             name: "Profile DB",
             classis: "active",
             uisref: "profile",
-            icon: "phone"
+            // icon: "phone"
         }, {
             name: "Interview Schedule",
             classis: "active",
             uisref: "interview-schedule",
-            icon: "phone"
+            // icon: "phone"
         }, {
             name: "Type of Interview",
             classis: "active",
             uisref: "interview-type",
-            icon: "phone"
+            // icon: "phone"
         }
     ];
 

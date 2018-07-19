@@ -1235,8 +1235,18 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
         $scope.availableSkills = ["angularJs", "Javascript", "HTML"];
         $scope.availableSkills1 = ["angularJs", "Javascript", "HTML"];
         $scope.availableSkills2 = ["angularJs", "Javascript", "HTML"];
+        $scope.moreInfoModal = function () {
+            $scope.moreInfo = $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/moreinforamtion.html",
+                scope: $scope,
+                size: 'lg',
+                windowClass: ''
+            });
+        }
+
     })
-    .controller('SourcesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal,$window) {
+    .controller('SourcesCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal, $window) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("sources");
         $scope.menutitle = NavigationService.makeactive("sources");
@@ -1251,9 +1261,11 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             });
         }
         $scope.availableSkills = ["angularJs", "Javascript", "HTML"];
-        $scope.Person = [
-            { Name: "John Hammond", Email: "john@gmail.com",Contact: 9819775693 },
-            ];
+        $scope.Person = [{
+            Name: "John Hammond",
+            Email: "john@gmail.com",
+            Contact: 9819775693
+        }, ];
 
         $scope.Add = function () {
             console.log("add");
@@ -1261,7 +1273,7 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             var person = {};
             person.Name = $scope.Name;
             person.Email = $scope.Email;
-            person.Contact = $scope.Contact;            
+            person.Contact = $scope.Contact;
             $scope.Person.push(person);
 
             //Clear the TextBoxes.
@@ -1419,7 +1431,15 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
 
             });
         }
-
+        $scope.moreInfoModal = function () {
+            $scope.moreInfo = $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/moreinforamtion.html",
+                scope: $scope,
+                size: 'lg',
+                windowClass: ''
+            });
+        }
         $scope.selectedprofileModal = function () {
             $uibModal.open({
                 animation: true,

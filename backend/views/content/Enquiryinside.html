@@ -12,50 +12,37 @@
 <div class="enquiry-inside">
     <div class="row">
         <div class="col-10">
-            <!-- <div class="enquiry-details">
-                <h5 class="">Enquiry Detail Page
-                </h5>
-                <table class="table table-striped mt-3">
-                    <thead>
-                        <tr>
-                            <th scope="col" style="text-align:center;">Enquiry. No</th>
-                            <th scope="col" style="text-align:center;">Customer Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" style="text-align:center;">1</th>
-                            <td align="center">
-                                Marks
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center;">2</th>
-                            <td align="center">
-                                Mark
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center;">3</th>
-                            <td align="center">
-                                Mark
-                            </td>
+            <h4>Enquiry Details</h4>
+            <table class="table">
+                <thead>
+                    <tr class="thead-light">
+                        <th style="text-align:center;">Enquiry Number</th>
+                        <th style="text-align:center;">Date</th>
+                        <th style="text-align:center;">Customer Name</th>
+                        <th style="text-align:center;">Target Date</th>
+                        <th style="text-align:center;">Key Skills</th>
+                        <th style="text-align:center;">Required Profiles</th>
+                        <th style="text-align:center;">Profiles Registered</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">2018-19-001</td>
+                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">01-01-2018</td>
+                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">TOI/UK</td>
+                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">16-02-2019</td>
+                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">AngularJs</td>
+                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">450</td>
+                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">300</td>
+                        <td>
+                            <a ng-click="moreInfoModal();">
+                                <i class="fas fa-info-circle info-font"></i>
+                            </a>
+                        </td>
+                    </tr>
 
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center;">4</th>
-                            <td align="center">
-                                Mark
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" style="text-align:center;">5</th>
-                            <td align="center">marks</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div> -->
+                </tbody>
+            </table>
             <div class="Add Profile" ng-if="showView=='profile'">
                 <div>
                     <a type="button" class="btn-primary text-black" ng-click="createprofileModal();">Create profile</a>
@@ -83,7 +70,7 @@
                                 <a ng-click="tabChange('detailsview');">2 years</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
                             </td>
                             <td align="center">
                                 <a ng-click="tabChange('detailsview');">15 days</a>
@@ -107,7 +94,7 @@
                                 <a ng-click="tabChange('detailsview');">2 years</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Naukri</a>
                             </td>
                             <td align="center">
                                 <a ng-click="tabChange('detailsview');">15 days</a>
@@ -131,7 +118,7 @@
                                 <a ng-click="tabChange('detailsview');">2 years</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
                             </td>
                             <td align="center">
                                 <a ng-click="tabChange('detailsview');">15 days</a>
@@ -155,7 +142,7 @@
                                 <a ng-click="tabChange('detailsview');">2 years</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Naukri</a>
                             </td>
                             <td align="center">
                                 <a ng-click="tabChange('detailsview');">15 days</a>
@@ -179,7 +166,7 @@
                                 <a ng-click="tabChange('detailsview');">2 years</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
                             </td>
                             <td align="center">
                                 <a ng-click="tabChange('detailsview');">15 days</a>
@@ -314,7 +301,7 @@
                         <tr>
                             <th scope="row" style="text-align:center;">1</th>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
                             </td>
                             <td align="center">Selected</td>
                             <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
@@ -325,7 +312,7 @@
                         <tr>
                             <th scope="row" style="text-align:center;">2</th>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
                             </td>
                             <td align="center">Rejected</td>
                             <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
@@ -336,7 +323,7 @@
                         <tr>
                             <th scope="row" style="text-align:center;">3</th>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
                             </td>
                             <td align="center">Selected</td>
                             <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
@@ -347,7 +334,7 @@
                         <tr>
                             <th scope="row" style="text-align:center;">4</th>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
                             </td>
                             <td align="center">Rejected</td>
                             <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
@@ -358,7 +345,7 @@
                         <tr>
                             <th scope="row" style="text-align:center;">5</th>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">mark</a>
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
                             </td>
                             <td align="center">Selected</td>
                             <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
@@ -565,19 +552,19 @@
         <div class="col-2">
             <ul class="list-unstyled">
                 <li>
-                    <a type="button" class="enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-pink text-white" ng-click="tabChange('profile');">Profiles</a>
+                    <a role="button" class="btn enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-pink text-white" ng-click="tabChange('profile');">Profiles</a>
                 </li>
                 <li>
-                    <a type="button" class="enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-blue text-white" ng-click="openSettingsModal()">Settings</a>
+                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-blue text-white" ng-click="openSettingsModal()">Settings</a>
                 </li>
                 <li>
-                    <a type="button" class="enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-grey text-white" ng-click="tabChange('interviewResult')">Interview Result</a>
+                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-grey text-white" ng-click="tabChange('interviewResult')">Interview Result</a>
                 </li>
                 <li>
-                    <a type="button" class="enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-purple text-white">Checklist</a>
+                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-purple text-white">Checklist</a>
                 </li>
                 <li>
-                    <a type="button" class="enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-green text-white" ng-click="selectedprofileModal();">Selected Profiles</a>
+                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-green text-white" ng-click="selectedprofileModal();">Selected Profiles</a>
                 </li>
             </ul>
         </div>
