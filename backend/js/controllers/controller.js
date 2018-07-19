@@ -1494,7 +1494,7 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
         $scope.showView = "profile";
         $scope.tabChange = function (tab) {
             $scope.showView = tab;
-            console.log("tabtabtab", tab)
+            console.log("tabtabtab", tab);
         }
         $scope.rounds = ["Online", "Telephonic", "Face to Face", "Client Introduction"];
     });
