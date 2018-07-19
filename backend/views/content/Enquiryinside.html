@@ -45,7 +45,7 @@
             </table>
             <div class="Add Profile" ng-if="showView=='profile'">
                 <div>
-                    <a type="button" class="btn-primary text-black" ng-click="createprofileModal();">Create profile</a>
+                    <a role="button" class="btn-primary text-black" ng-click="createprofileModal();">Create profile</a>
                 </div>
                 <table class="table table-striped mt-3">
                     <thead>
@@ -185,7 +185,7 @@
                 </table>
             </div>
             <div class="interview-schedule" ng-if="showView=='interviewSchedule'">
-                <a type="button" class="btn-primary my-3" ng-click="openpersonalInteview();">Schedule Interview</a>
+                <a role="button" class="btn-primary my-3" ng-click="openpersonalInteview();">Schedule Interview</a>
                 <div class="row">
                     <div class="col-4 mb-4">
                         <h6 class="text-center">12
@@ -540,11 +540,11 @@
 
                 <div class="row pt-2">
                     <div class="col">
-                        <a type="button" class="btn-primary text-black mr-2" ng-click="openpersonalInteview();">Schedule Interview</a>
+                        <a role="button" class="btn-primary text-black mr-2" ng-click="openpersonalInteview();" ng-hide="showView=='rejectedStatus' || showView=='selectionStatus'">Schedule Interview</a>
                     </div>
                     <div class="col text-right">
-                        <a type="button" class="btn-primary text-black mr-2" ng-click="openReject();" ng-hide="showView=='rejectedStatus'">Reject</a>
-                        <a type="button" class="btn-primary text-black" ng-click="openSelect();" ng-hide="showView=='selectionStatus'">Select</a>
+                        <a role="button" class="btn-primary text-black mr-2" ng-click="openReject();" ng-hide="showView=='rejectedStatus' || showView=='selectionStatus'">Reject</a>
+                        <a role="button" class="btn-primary text-black" ng-click="openSelect();" ng-hide="showView=='rejectedStatus' || showView=='selectionStatus'">Select</a>
                     </div>
                 </div>
             </div>
