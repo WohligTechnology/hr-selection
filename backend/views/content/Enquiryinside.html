@@ -45,7 +45,7 @@
             </table>
             <div class="Add Profile" ng-if="showView=='profile'">
                 <div>
-                    <a role="button" class="btn-primary text-black" ng-click="createprofileModal();">Create profile</a>
+                    <a role="button" class="btn-primary text-black" ng-click="createprofileModal();">Add profile</a>
                 </div>
                 <table class="table table-striped mt-3">
                     <thead>
@@ -495,43 +495,52 @@
                     <table class="table table-striped ">
                         <thead>
                             <tr>
+                                <th style="text-align:center;">Date</th>
+                                <th style="text-align:center;">Time</th>
                                 <th style="text-align:center;">Round Of Interview</th>
                                 <th style="text-align:center;">Mode Of Interview</th>
                                 <th style="text-align:center;">Name Of Interviewer</th>
                                 <th style="text-align:center;">Status</th>
-                                <th style="text-align:center;">Feedback</th>
-                                <th style="text-align:center;">Screenshots</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <td align="center">12/08/2018</td>
+                                <td align="center">12.50 pm</td>
                                 <td align="center">1 </td>
                                 <td align="center">Online Interview</td>
                                 <td align="center">Karan</td>
                                 <td align="center">Shortlisted</td>
-                                <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
-                                <td align="center">
-                                    <a href="" ng-click="openScreen()">View Screenshots</a>
+                                <td>
+                                    <a ng-click="interviewMore();">
+                                        <i class="fas fa-info-circle info-font"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
+                                <td align="center">12/08/2018</td>
+                                <td align="center">12.50 pm</td>
                                 <td align="center">2</td>
                                 <td align="center">Telephonic Interview </td>
                                 <td align="center">Khushaboo</td>
                                 <td align="center">Shortlisted</td>
-                                <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
-                                <td align="center">
-                                    <a href="" ng-click="openScreen()">View Screenshots</a>
+                                <td>
+                                    <a ng-click="interviewMore();">
+                                        <i class="fas fa-info-circle info-font"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
+                                <td align="center">12/08/2018</td>
+                                <td align="center">12.50 pm</td>
                                 <td align="center">3 </td>
                                 <td align="center">Skype Interview</td>
                                 <td align="center">Marks</td>
                                 <td align="center">Rejected</td>
-                                <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
-                                <td align="center">
-                                    <a href="" ng-click="openScreen()">View Screenshots</a>
+                                <td>
+                                    <a ng-click="interviewMore();">
+                                        <i class="fas fa-info-circle info-font"></i>
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>

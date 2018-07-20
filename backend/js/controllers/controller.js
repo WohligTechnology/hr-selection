@@ -1440,6 +1440,16 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
                 windowClass: ''
             });
         }
+        $scope.interviewMore = function () {
+            $scope.interview = $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/interview-result-detail.html",
+                scope: $scope,
+                size: 'md',
+                windowClass: ''
+            });
+        }
+
         $scope.selectedprofileModal = function () {
             $uibModal.open({
                 animation: true,
