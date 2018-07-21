@@ -13,7 +13,7 @@ myApp.factory('NavigationService', function ($http) {
             // icon: "phone"
         },
         {
-            name: "Add Admin",
+            name: "Admin Master",
             classis: "active",
             uisref: "add-admin",
             // icon: "phone"

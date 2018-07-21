@@ -12,16 +12,17 @@
 <div class="enquiry-inside">
     <div class="row">
         <div class="col-10">
-            <h4>Enquiry Details</h4>
+            <h4>Request Details</h4>
             <table class="table">
                 <thead>
                     <tr class="thead-light">
-                        <th style="text-align:center;">Enquiry Number</th>
+                        <th style="text-align:center;">Request Number</th>
                         <th style="text-align:center;">Date</th>
-                        <th style="text-align:center;">Customer Name</th>
+                        <th style="text-align:center;">Customer </th>
+                        <th style="text-align:center;">Role </th>
                         <th style="text-align:center;">Target Date</th>
                         <th style="text-align:center;">Key Skills</th>
-                        <th style="text-align:center;">Required Profiles</th>
+                        <th style="text-align:center;">Positions</th>
                         <th style="text-align:center;">Profiles Registered</th>
                     </tr>
                 </thead>
@@ -30,6 +31,7 @@
                         <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">2018-19-001</td>
                         <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">01-01-2018</td>
                         <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">TOI/UK</td>
+                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">Manager</td>
                         <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">16-02-2019</td>
                         <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">AngularJs</td>
                         <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">450</td>
@@ -76,10 +78,10 @@
                                 <a ng-click="tabChange('detailsview');">15 days</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">2.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">250000</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">4.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">450000</a>
                             </td>
                             <td>
                                 <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle1" class=" switch-mini switch-success "></toggle-switch>
@@ -100,10 +102,10 @@
                                 <a ng-click="tabChange('detailsview');">15 days</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">2.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">250000</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">4.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">450000</a>
                             </td>
                             <td>
                                 <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle2" class=" switch-mini switch-success "></toggle-switch>
@@ -124,10 +126,10 @@
                                 <a ng-click="tabChange('detailsview');">15 days</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">2.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">250000</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">4.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">450000</a>
                             </td>
                             <td>
                                 <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle3" class=" switch-mini switch-success "></toggle-switch>
@@ -148,10 +150,10 @@
                                 <a ng-click="tabChange('detailsview');">15 days</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">2.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">250000</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">4.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">450000</a>
                             </td>
                             <td>
                                 <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle4" class=" switch-mini switch-success "></toggle-switch>
@@ -172,10 +174,10 @@
                                 <a ng-click="tabChange('detailsview');">15 days</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">2.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">250000</a>
                             </td>
                             <td align="center">
-                                <a ng-click="tabChange('detailsview');">4.5 lakh</a>
+                                <a ng-click="tabChange('detailsview');">450000</a>
                             </td>
                             <td>
                                 <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle5" class=" switch-mini switch-success "></toggle-switch>
@@ -364,20 +366,20 @@
                     </h5>
                     <form class="ng-pristine ng-valid">
                         <div class="form-group row">
-                            <label for="name" class="col-sm-5 col-form-label">Name Of Developer :</label>
+                            <label for="name" class="col-sm-5 col-form-label">Name :</label>
                             <div class="col-sm-7 border d-flex align-items-center">
                                 <span>Snehal</span>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="year" class="col-sm-5 col-form-label">Years Of Experience :</label>
+                            <label for="year" class="col-sm-5 col-form-label">Total Experience :</label>
                             <div class="col-sm-7 d-flex align-item-center">
                                 1
                                 <span class="px-2">year</span>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="ryear" class="col-sm-5 col-form-label">Years Of Relevant Experience :</label>
+                            <label for="ryear" class="col-sm-5 col-form-label">Relevant Experience :</label>
                             <div class="col-sm-7 d-flex align-item-center">
                                 2
                                 <span class="px-2">year</span>
@@ -497,10 +499,11 @@
                             <tr>
                                 <th style="text-align:center;">Date</th>
                                 <th style="text-align:center;">Time</th>
-                                <th style="text-align:center;">Round Of Interview</th>
-                                <th style="text-align:center;">Mode Of Interview</th>
+                                <th style="text-align:center;">Interview Round </th>
+                                <th style="text-align:center;">Interview Mode</th>
                                 <th style="text-align:center;">Name Of Interviewer</th>
                                 <th style="text-align:center;">Status</th>
+                                <th style="text-align:center;">Score</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -511,6 +514,8 @@
                                 <td align="center">Online Interview</td>
                                 <td align="center">Karan</td>
                                 <td align="center">Shortlisted</td>
+                                <td align="center">3</td>
+
                                 <td>
                                     <a ng-click="interviewMore();">
                                         <i class="fas fa-info-circle info-font"></i>
@@ -524,6 +529,8 @@
                                 <td align="center">Telephonic Interview </td>
                                 <td align="center">Khushaboo</td>
                                 <td align="center">Shortlisted</td>
+                                <td align="center">3</td>
+
                                 <td>
                                     <a ng-click="interviewMore();">
                                         <i class="fas fa-info-circle info-font"></i>
@@ -537,6 +544,7 @@
                                 <td align="center">Skype Interview</td>
                                 <td align="center">Marks</td>
                                 <td align="center">Rejected</td>
+                                <td align="center">5</td>
                                 <td>
                                     <a ng-click="interviewMore();">
                                         <i class="fas fa-info-circle info-font"></i>
