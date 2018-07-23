@@ -12,39 +12,41 @@
 <div class="enquiry-inside">
     <div class="row">
         <div class="col-10">
-            <h4>Request Details</h4>
-            <table class="table">
-                <thead>
-                    <tr class="thead-light">
-                        <th style="text-align:center;">Request Number</th>
-                        <th style="text-align:center;">Date</th>
-                        <th style="text-align:center;">Customer </th>
-                        <th style="text-align:center;">Role </th>
-                        <th style="text-align:center;">Target Date</th>
-                        <th style="text-align:center;">Key Skills</th>
-                        <th style="text-align:center;">Positions</th>
-                        <th style="text-align:center;">Profiles Registered</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">2018-19-001</td>
-                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">01-01-2018</td>
-                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">TOI/UK</td>
-                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">Manager</td>
-                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">16-02-2019</td>
-                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">AngularJs</td>
-                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">450</td>
-                        <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">300</td>
-                        <td>
-                            <a ng-click="moreInfoModal();">
-                                <i class="fas fa-info-circle info-font"></i>
-                            </a>
-                        </td>
-                    </tr>
+            <div class="">
+                <h4>Request Details</h4>
+                <table class="table">
+                    <thead>
+                        <tr class="thead-light">
+                            <th style="text-align:center;">Request Number</th>
+                            <th style="text-align:center;">Date</th>
+                            <th style="text-align:center;">Customer </th>
+                            <th style="text-align:center;">Role </th>
+                            <th style="text-align:center;">Target Date</th>
+                            <th style="text-align:center;">Key Skills</th>
+                            <th style="text-align:center;">Positions</th>
+                            <th style="text-align:center;">Profiles Registered</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">2018-19-001</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">01-01-2018</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">TOI/UK</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">Manager</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">16-02-2019</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">AngularJs</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">450</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">300</td>
+                            <td>
+                                <a ng-click="moreInfoModal();">
+                                    <i class="fas fa-info-circle info-font"></i>
+                                </a>
+                            </td>
+                        </tr>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
             <div class="Add Profile" ng-if="showView=='profile'">
                 <div>
                     <a role="button" class="btn-primary text-black" ng-click="createprofileModal();">Add profile</a>
@@ -358,6 +360,130 @@
                     </tbody>
                 </table>
             </div>
+            <div class="interview-result" ng-if="showView=='checkList'">
+                <h4>Checklist</h4>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="add-task-btn">
+                            <button class="btn px-2 w-100 text-left">
+                                <i class="fas fa-plus"></i>
+                                <span class="px-3">Add a task</span>
+                            </button>
+                        </div>
+                        <div class="add-task p-2">
+                            <a class="choose-file d-inline-block">
+                                <div class="circle-icon">
+                                    <i class="far fa-circle"></i>
+                                </div>
+                                <div class="check-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </a>
+                            <div class="d-inline-block bottom-border">
+                                <div class="d-inline-block">
+                                    <input type="text">
+                                </div>
+                                <a class="d-inline-block pen-icon" ng-click="editOpen();">
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="add-task p-2">
+                            <a class="choose-file d-inline-block">
+                                <div class="circle-icon">
+                                    <i class="far fa-circle"></i>
+                                </div>
+                                <div class="check-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </a>
+                            <div class="d-inline-block bottom-border">
+                                <div class="d-inline-block">
+                                    <input type="text">
+                                </div>
+                                <a class="d-inline-block pen-icon" ng-click="editOpen();">
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="add-task p-2">
+                            <a class="choose-file d-inline-block">
+                                <div class="circle-icon">
+                                    <i class="far fa-circle"></i>
+                                </div>
+                                <div class="check-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </a>
+                            <div class="d-inline-block bottom-border">
+                                <div class="d-inline-block">
+                                    <input type="text">
+                                </div>
+                                <a class="d-inline-block pen-icon" ng-click="editOpen();">
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="completed-section px-2">
+                            <uib-accordion close-others="oneAtATime">
+                                <div uib-accordion-group class="mt-1" heading="Completed(1)" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled"
+                                    ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}">
+
+                                    <div class="complete-task p-2">
+                                        <a class="choose-file d-inline-block">
+                                            <div class="check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </a>
+                                        <div class="d-inline-block  bottom-border">
+                                            <div class="d-inline-block ">
+                                                <p class="m-0 px-1">deletedelete-icondelete-icondelete</p>
+                                            </div>
+                                            <div class="d-inline-block">
+                                                <i class="fas fa-trash-alt delete-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="complete-task p-2">
+                                        <a class="choose-file d-inline-block">
+                                            <div class="check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </a>
+                                        <div class="d-inline-block  bottom-border">
+                                            <div class="d-inline-block">
+                                                <p class="m-0 px-1">deletedelete-icondelete-icondelete</p>
+                                            </div>
+                                            <div class="d-inline-block">
+                                                <i class="fas fa-trash-alt delete-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="complete-task p-2">
+                                        <a class="choose-file d-inline-block">
+                                            <div class="check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </a>
+                                        <div class="d-inline-block  bottom-border">
+                                            <div class="d-inline-block">
+                                                <p class="m-0 px-1">deletedelete-icondelete-icondelete</p>
+                                            </div>
+                                            <div class="d-inline-block">
+                                                <i class="fas fa-trash-alt delete-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </uib-accordion>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="detailsview" ng-if="showView=='detailsview' || showView=='selectionStatus' || showView=='rejectedStatus'">
                 <div class="Profile-Information">
                     <h4 class="pb-2 d-inline-block mr-5">Profile Information</h4>
@@ -565,6 +691,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="col-2">
             <ul class="list-unstyled">
@@ -578,7 +705,7 @@
                     <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-grey text-white" ng-click="tabChange('interviewResult')">Interview Result</a>
                 </li>
                 <li>
-                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-purple text-white">Checklist</a>
+                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-purple text-white" ng-click="tabChange('checkList')">Checklist</a>
                 </li>
                 <li>
                     <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-green text-white" ng-click="selectedprofileModal();">Selected Profiles</a>

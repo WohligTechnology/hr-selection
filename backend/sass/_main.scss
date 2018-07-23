@@ -1467,8 +1467,147 @@ input:checked+.slider:before {
     font-size: 1rem !important;
 }
 
-// .enquiry-table-pd {
-//     padding: 0.60rem !important;
-// }
+//scss for add task section
+.add-task {
+    &:hover {
+        box-shadow: 0 1px 5px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 1px rgba(60, 64, 67, 0.149);
+        outline: 0;
+        .bottom-border {
+            border-bottom: 1px solid transparent;
+        }
+        .pen-icon {
+            opacity: 1;
+        }
+    }
+    input {
+        background: transparent;
+        border: none;
+    }
+    .bottom-border {
+        border-bottom: 1px solid rgba(60, 64, 67, 0.302);
+    }
+    .pen-icon {
+        opacity: 0;
+    }
+    .check-icon {
+        display: none;
+    }
+    .choose-file {
+        &:hover {
+            .check-icon {
+                display: block;
+            }
+            .circle-icon {
+                display: none;
+            }
+        }
+    }
+}
+
+.add-task-btn {
+    .btn {
+        background: transparent;
+        &:hover {
+            background: #ccc;
+            border-radius: 50px;
+        }
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem transparent;
+        }
+    }
+}
+
+.completed-section {
+    .card {
+        display: block;
+        background: transparent;
+        border: none;
+    }
+    .card-header {
+        background: transparent;
+        border: none;
+    }
+    .card-body {
+        padding: 0;
+        border-bottom: 1px solid rgba(60, 64, 67, 0.302);
+        border-top: 1px solid rgba(60, 64, 67, 0.302);
+    }
+    .card-header {
+        padding: 1rem 0;
+        h5 {
+            font-size: 1rem;
+            a span {
+                color: black !important;
+            }
+        }
+    }
+}
+
+.complete-task {
+    .delete-icon {
+        display: none;
+    }
+    &:hover {
+        box-shadow: 0 1px 5px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 1px rgba(60, 64, 67, 0.149);
+        outline: 0;
+        .delete-icon {
+            display: block;
+        }
+        .bottom-border {
+            border-bottom: 1px solid transparent;
+        }
+    }
+    input {
+        background: transparent;
+        border: none;
+    }
+    .bottom-border {
+        border-bottom: 1px solid rgba(60, 64, 67, 0.302);
+    }
+}
+
+.complete-task:last-child {
+    .bottom-border {
+        border-bottom: 1px solid transparent;
+    }
+}
+
+.dateclass {
+    width: 70%;
+}
+
+.dateclass.placeholderclass::before {
+    width: 70%;
+    content: attr(placeholder);
+}
+
+.dateclass.placeholderclass:hover::before {
+    width: 0%;
+    content: "";
+}
+
+.btn-addsubtask {
+    border: 1px solid #e9e7e7;
+    border-radius: 50px;
+    &:hover {
+        background: #e9e7e7;
+    }
+}
+
+.edit-modal-data {
+    input,
+    textarea,
+    .selectpicker {
+        border: none;
+        background: #e9e7e7;
+        &:focus {
+            border: none;
+            outline: none;
+            background: #e9e7e7;
+        }
+    }
+}
+
 @import "fancybox-override";
 @import "other/mobile";

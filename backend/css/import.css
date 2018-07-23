@@ -31187,10 +31187,10 @@ body {
   border-bottom-right-radius: 5px; }
 
 .categories {
-  cursor: pointer;
-  color: black; }
+  cursor: pointer; }
   .categories h2 {
-    font-family: Lora-Bold; }
+    font-family: Lora-Bold;
+    color: white; }
   .categories:hover {
     box-shadow: 0 10px 6px -6px #777; }
 
@@ -31198,7 +31198,8 @@ body {
   height: 35px !important; }
 
 .btn-primary {
-  padding: .175rem .75rem !important; }
+  padding: .175rem .75rem !important;
+  color: white !important; }
 
 .font-Lato-Bold {
   font-family: Lora-Bold; }
@@ -31297,6 +31298,175 @@ body {
   -webkit-box-shadow: 0 4px 4px -2px #000000;
   -moz-box-shadow: 0 4px 4px -2px #000000;
   box-shadow: 0 4px 4px -2px #000000; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px; }
+
+.switch input {
+  display: none; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #2196F3; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+.sources-modal .icon-add {
+  position: absolute;
+  right: -6px;
+  cursor: pointer; }
+
+.sources-modal .icon-remove {
+  position: absolute;
+  right: -6px;
+  top: 18px;
+  cursor: pointer; }
+
+.btn-primary {
+  color: white !important; }
+
+.interview-bg {
+  background-color: #e2e2e2; }
+
+.info-font {
+  font-size: 1rem !important; }
+
+.add-task:hover {
+  box-shadow: 0 1px 5px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 1px rgba(60, 64, 67, 0.149);
+  outline: 0; }
+  .add-task:hover .bottom-border {
+    border-bottom: 1px solid transparent; }
+  .add-task:hover .pen-icon {
+    opacity: 1; }
+
+.add-task input {
+  background: transparent;
+  border: none; }
+
+.add-task .bottom-border {
+  border-bottom: 1px solid rgba(60, 64, 67, 0.302); }
+
+.add-task .pen-icon {
+  opacity: 0; }
+
+.add-task .check-icon {
+  display: none; }
+
+.add-task .choose-file:hover .check-icon {
+  display: block; }
+
+.add-task .choose-file:hover .circle-icon {
+  display: none; }
+
+.add-task-btn .btn {
+  background: transparent; }
+  .add-task-btn .btn:hover {
+    background: #ccc;
+    border-radius: 50px; }
+  .add-task-btn .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent; }
+
+.completed-section .card {
+  display: block;
+  background: transparent;
+  border: none; }
+
+.completed-section .card-header {
+  background: transparent;
+  border: none; }
+
+.completed-section .card-body {
+  padding: 0;
+  border-bottom: 1px solid rgba(60, 64, 67, 0.302);
+  border-top: 1px solid rgba(60, 64, 67, 0.302); }
+
+.completed-section .card-header {
+  padding: 1rem 0; }
+  .completed-section .card-header h5 {
+    font-size: 1rem; }
+    .completed-section .card-header h5 a span {
+      color: black !important; }
+
+.complete-task .delete-icon {
+  display: none; }
+
+.complete-task:hover {
+  box-shadow: 0 1px 5px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 1px rgba(60, 64, 67, 0.149);
+  outline: 0; }
+  .complete-task:hover .delete-icon {
+    display: block; }
+  .complete-task:hover .bottom-border {
+    border-bottom: 1px solid transparent; }
+
+.complete-task input {
+  background: transparent;
+  border: none; }
+
+.complete-task .bottom-border {
+  border-bottom: 1px solid rgba(60, 64, 67, 0.302); }
+
+.complete-task:last-child .bottom-border {
+  border-bottom: 1px solid transparent; }
+
+.dateclass {
+  width: 70%; }
+
+.dateclass.placeholderclass::before {
+  width: 70%;
+  content: attr(placeholder); }
+
+.dateclass.placeholderclass:hover::before {
+  width: 0%;
+  content: ""; }
+
+.btn-addsubtask {
+  border: 1px solid #e9e7e7;
+  border-radius: 50px; }
+  .btn-addsubtask:hover {
+    background: #e9e7e7; }
+
+.edit-modal-data input,
+.edit-modal-data textarea,
+.edit-modal-data .selectpicker {
+  border: none;
+  background: #e9e7e7; }
+  .edit-modal-data input:focus,
+  .edit-modal-data textarea:focus,
+  .edit-modal-data .selectpicker:focus {
+    border: none;
+    outline: none;
+    background: #e9e7e7; }
 
 #fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
   background-image: url(../img/fancybox_sprite.png); }
