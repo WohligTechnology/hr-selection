@@ -1249,7 +1249,7 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             });
         }
     })
-    .controller('InductionChecklistCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+    .controller('InductionChecklistCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal, $window) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("inductionchecklist");
         $scope.menutitle = NavigationService.makeactive("inductionchecklist");
@@ -1262,5 +1262,78 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
                 scope: $scope,
                 size: 'lg',
             });
+        }
+        $scope.Subcategory = [{
+            Name: "John Hammond",
+        }, ];
+
+        $scope.Add = function () {
+            console.log("add");
+            //Add the new item to the Array.
+            var Subcategory = {};
+            Subcategory.Name = $scope.Name;
+
+            $scope.Subcategory.push(Subcategory);
+
+            //Clear the TextBoxes.
+            $scope.Name = "";
+        };
+
+        $scope.Remove = function (index) {
+            //Find the record using Index from Array.
+            var name = $scope.Subcategory[index].Name;
+            if ($window.confirm("Do you want to delete: " + name)) {
+                //Remove the item from Array using Index.
+                $scope.Subcategory.splice(index, 1);
+            }
+        }
+
+        //////////////////////////////////////
+        $scope.MainCategory = [{
+            Category: "Karan",
+            Subcategory: [{
+                name: 'subcategory1',
+            }, {
+                name: 'subcategory2',
+            }, {
+                name: 'subcategory3',
+            }, {
+                name: 'subcategory4',
+            }]
+
+        }];
+
+        $scope.Addcat = function () {
+            var CategoryData = {};
+            CategoryData.Category = '';
+            var sub = {};
+            sub.name = '';
+            var SubcategoryArr = [];
+            SubcategoryArr.push(sub);
+            CategoryData.Subcategory = SubcategoryArr;
+            $scope.MainCategory.push(CategoryData);
+            console.log(" $scope.MainCategory", $scope.MainCategory)
+        };
+
+        $scope.addSub = function (data) {
+            var SubcategoryArr = [];
+            SubcategoryArr.name = '';
+            data.Subcategory.push(SubcategoryArr);
+        };
+
+        $scope.Removecat = function (index) {
+            var Category = $scope.MainCategory[index].Category;
+            if ($window.confirm("Do you want to delete: " + Category)) {
+                $scope.MainCategory.splice(index, 1);
+            }
+        }
+        $scope.Removesub = function (outerIndex, index) {
+            console.log(outerIndex, index)
+            console.log("---", $scope.MainCategory[outerIndex].Category[index])
+
+            var Subcategory = $scope.MainCategory[outerIndex].Category[index].Subcategory;
+            if ($window.confirm("Do you want to delete: " + Subcategory)) {
+                $scope.Subcategory.splice(index, 1);
+            }
         }
     });
