@@ -1218,22 +1218,22 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
     })
-    .controller('AddadminCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+    .controller('AddRepresentativeCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
-        $scope.template = TemplateService.changecontent("add-admin");
-        $scope.menutitle = NavigationService.makeactive("add-admin");
+        $scope.template = TemplateService.changecontent("add-representative");
+        $scope.menutitle = NavigationService.makeactive("add-representative");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.AddadminModal = function () {
             $uibModal.open({
                 animation: true,
-                templateUrl: "views/modal/add-admin-modal.html",
+                templateUrl: "views/modal/add-representative-modal.html",
                 scope: $scope,
                 size: 'lg',
             });
         }
     })
- 
+
     .controller('CreateCandidateCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("create-candidate");
@@ -1244,6 +1244,21 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             $uibModal.open({
                 animation: true,
                 templateUrl: "views/modal/create-candidate-modal.html",
+                scope: $scope,
+                size: 'lg',
+            });
+        }
+    })
+    .controller('InductionChecklistCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("inductionchecklist");
+        $scope.menutitle = NavigationService.makeactive("inductionchecklist");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.ChecklistModal = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/create-category.html",
                 scope: $scope,
                 size: 'lg',
             });

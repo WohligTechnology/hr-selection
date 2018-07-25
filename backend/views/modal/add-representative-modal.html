@@ -1,0 +1,27 @@
+<div class="modal-header position-relative">
+    <h4 class="modal-title">Add Representative</h4>
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+        <i class="fas fa-times"></i>
+    </a>
+</div>
+<div class="p-4">
+    <form>
+        <div class="form-group row">
+            <label for="adinname" class="col-4 col-form-label"> Representative Name : </label>
+            <div class="col-8">
+                <input name="adinname" class="form-control height35" type="text" placeholder="Enter Representative  Name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="adinemail" class="col-4 col-form-label"> Designation : </label>
+            <div class="col-8">
+                <input name="adinemail" class="form-control height35" type="text" placeholder="Enter Designation" required>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <button type="button" class="btn btn-primary" ng-click="$dismiss()">Cancel</button>
+        </div>
+    </form>
+</div>

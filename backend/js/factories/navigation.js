@@ -13,9 +13,15 @@ myApp.factory('NavigationService', function ($http) {
             // icon: "phone"
         },
         {
-            name: "Add Admin",
+            name: "Add Representative",
             classis: "active",
-            uisref: "add-admin",
+            uisref: "add-representative",
+            // icon: "phone"
+        },
+        {
+            name: "Induction Checklist",
+            classis: "active",
+            uisref: "inductionchecklist",
             // icon: "phone"
         },
         // {
