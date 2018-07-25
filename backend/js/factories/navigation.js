@@ -53,6 +53,11 @@ myApp.factory('NavigationService', function ($http) {
             classis: "active",
             uisref: "interview-type",
             // icon: "phone"
+        }, {
+            name: "Create Candidate",
+            classis: "active",
+            uisref: "create-candidate",
+            // icon: "phone"
         }
     ];
 

@@ -1521,4 +1521,19 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             isFirstOpen: false,
             isFirstDisabled: false
         };
+    })
+    .controller('CreateCandidateCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("create-candidate");
+        $scope.menutitle = NavigationService.makeactive("create-candidate");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.candidateModal = function () {
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/create-candidate-modal.html",
+                scope: $scope,
+                size: 'lg',
+            });
+        }
     });

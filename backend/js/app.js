@@ -134,6 +134,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: "views/template.html",
             controller: 'InterviewscheduleCtrl'
         })
+        .state('create-candidate', {
+            url: "/create-candidate",
+            templateUrl: "views/template.html",
+            controller: 'CreateCandidateCtrl'
+        })
         .state('interview-type', {
             url: "/interview-type",
             templateUrl: "views/template.html",
