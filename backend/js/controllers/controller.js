@@ -1313,10 +1313,10 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
         $scope.menutitle = NavigationService.makeactive("add-admin");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-        $scope.opencreateAdmin = function () {
+        $scope.AddadminModal = function () {
             $uibModal.open({
                 animation: true,
-                templateUrl: "views/modal/create-admin.html",
+                templateUrl: "views/modal/add-admin-modal.html",
                 scope: $scope,
                 size: 'lg',
             });
