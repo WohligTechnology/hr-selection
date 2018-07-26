@@ -1328,12 +1328,8 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             }
         }
         $scope.Removesub = function (outerIndex, index) {
-            console.log(outerIndex, index)
-            console.log("---", $scope.MainCategory[outerIndex].Category[index])
-
-            var Subcategory = $scope.MainCategory[outerIndex].Category[index].Subcategory;
-            if ($window.confirm("Do you want to delete: " + Subcategory)) {
-                $scope.Subcategory.splice(index, 1);
+            if ($window.confirm("Do you want to delete: ")) {
+                $scope.MainCategory[outerIndex].Subcategory.splice(index, 1);
             }
         }
     });
