@@ -1249,6 +1249,14 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
             });
         }
     })
+    .controller('JoiningChkListsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("joining-chklist");
+        $scope.menutitle = NavigationService.makeactive("joining-chklist");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+     
+    })
     .controller('InductionChecklistCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal, $window) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("inductionchecklist");

@@ -145,6 +145,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: "views/template.html",
             controller: 'CreateCandidateCtrl'
         })
+        .state('joinig-chklist', {
+            url: "/joinig-chklist",
+            templateUrl: "views/template.html",
+            controller: 'JoiningChkListsCtrl'
+        })
         .state('interview-type', {
             url: "/interview-type",
             templateUrl: "views/template.html",
