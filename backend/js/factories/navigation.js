@@ -13,9 +13,9 @@ myApp.factory('NavigationService', function ($http) {
             // icon: "phone"
         },
         {
-            name: "Add Representative",
+            name: "Candidate",
             classis: "active",
-            uisref: "add-representative",
+            uisref: "create-candidate",
             // icon: "phone"
         },
         {
@@ -24,6 +24,13 @@ myApp.factory('NavigationService', function ($http) {
             uisref: "inductionchecklist",
             // icon: "phone"
         },
+        {
+            name: "Add Representative",
+            classis: "active",
+            uisref: "add-representative",
+            // icon: "phone"
+        },
+       
         // {
         //     name: "Enquiries",
         //     classis: "active",
@@ -60,12 +67,7 @@ myApp.factory('NavigationService', function ($http) {
         //     uisref: "interview-type",
         //     // icon: "phone"
         // }, 
-        {
-            name: "Create Candidate",
-            classis: "active",
-            uisref: "create-candidate",
-            // icon: "phone"
-        }
+      
     ];
 
     return {
