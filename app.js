@@ -21,6 +21,13 @@
 // Ensure we're in the project directory, so relative paths work as expected
 // no matter where we actually lift from.
 process.chdir(__dirname);
+if (process.env.name=== "hr-selection - 84") {
+    global.env = require("./config/env/production.js");
+} else if (process.env.name=== "hr-selection - 85") {
+    global.env = require("./config/env/production.js");
+} else {
+    global.env = require("./config/env/development.js");
+}
 
 // Ensure a "sails" can be located:
 (function () {
@@ -56,5 +63,6 @@ process.chdir(__dirname);
     }
 
     // Start server
+
     sails.lift(rc('sails'));
 })();

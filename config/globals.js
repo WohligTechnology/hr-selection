@@ -141,9 +141,3 @@ global.log = function (data) {
 
 // sending Emails using sendgrid
 
-
-if (process.env.NODE_ENV && process.env.NODE_ENV === "production") {
-    global.env = require("./env/production.js");
-} else {
-    global.env = require("./env/development.js");
-}
