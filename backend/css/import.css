@@ -31192,6 +31192,9 @@ body {
 .font-Lato-Bold {
   font-family: Lora-Bold; }
 
+.font-Lato-Regular {
+  font-family: Lora-Regular; }
+
 .table th {
   font-size: 0.85rem; }
 
@@ -31462,6 +31465,9 @@ input:checked + .slider:before {
 .ats-switch span.switch-right {
   padding-right: 10px !important; }
 
+header.side-header {
+  top: 71px; }
+
 #fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
   background-image: url(../img/fancybox_sprite.png); }
 
@@ -31508,5 +31514,29 @@ input:checked + .slider:before {
     display: none; }
   .info-house {
     right: 28%; } }
+
+.bg-blue {
+  background: linear-gradient(to right, #0e3a81, #38609e); }
+
+.empoyee-details h6 {
+  color: #e5e5e5;
+  font-weight: 600; }
+  .empoyee-details h6 span {
+    font-size: 13px; }
+
+.empoyee-details p {
+  color: #e5e5e5;
+  font-size: 13px;
+  line-height: 7px;
+  font-weight: 600;
+  letter-spacing: 0.9px; }
+
+.empoyee-details span {
+  font-weight: 400; }
+
+.checklist-details {
+  width: 80%;
+  padding: 20px;
+  background-color: #fff; }
 
 /*# sourceMappingURL=import.css.map */

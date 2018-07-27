@@ -5,6 +5,7 @@ $green: #35c565;
 $yellow: #f4dc11;
 $google: #4285F4;
 $border-color: #e5e5e5;
+$white:#fff;
 $brand-primary: $blue;
 $brand-info: $yellow;
 $brand-warning: $orange;
@@ -1261,13 +1262,16 @@ body {
 .font-Lato-Bold {
     font-family: Lora-Bold;
 }
-
+.font-Lato-Regular {
+    font-family: Lora-Regular;
+}
 .table th {
     font-size: 0.85rem;
 }
 
 .table td {
     font-size: 0.82rem;
+  
     cursor: pointer;
 }
 
@@ -1620,12 +1624,11 @@ input:checked+.slider:before {
 .ats-switch span.switch-right{
     padding-right: 10px !important;
 }
-.comp-status{
-    // select{
-    //     width: 100%;
-    //     height: 34px;
-    //     padding-left: 10px;
-    // }
+// header
+header.side-header {
+
+    top: 71px;
 }
 @import "fancybox-override";
 @import "other/mobile";
+@import "joining-chklist";

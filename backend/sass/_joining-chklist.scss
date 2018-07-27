@@ -1,0 +1,31 @@
+  
+  .bg-blue{
+    background: linear-gradient(to right, #0e3a81 , #38609e);
+  }
+  .empoyee-details{
+    h6{
+      color:$border-color; 
+      font-weight: 600;
+      // font-family: Lora-Bold;
+      span{
+     
+        font-size: 13px;
+      }
+    }
+    p{
+      color:$border-color;
+      font-size: 13px;
+      // font-family: Lora;
+      line-height: 7px;
+      font-weight: 600;
+      letter-spacing: 0.9px;
+    }
+    span{
+      font-weight: 400;
+    }
+  }
+ .checklist-details{
+  width: 80%;
+  padding: 20px;
+  background-color: $white;
+ }
