@@ -5,7 +5,14 @@ $green: #35c565;
 $yellow: #f4dc11;
 $google: #4285F4;
 $border-color: #e5e5e5;
+$black: #000 !default;
 $white:#fff;
+// Create grayscale
+$gray-dark: #292b2c !default;
+$gray: #464a4c !default;
+$gray-light: #636c72 !default;
+$gray-lighter: #eceeef !default;
+$gray-lightest: #f7f7f9 !default;
 $brand-primary: $blue;
 $brand-info: $yellow;
 $brand-warning: $orange;
@@ -1153,7 +1160,7 @@ img.uploadingImage {
 
 body {
     overflow: visible !important;
-    font-family: Lora;
+    // font-family: Lora;
 }
 
 .circle {
@@ -1629,6 +1636,18 @@ header.side-header {
 
     top: 71px;
 }
+
+// create chklist
+
+.chk-list-tb{
+    td{
+        border-top:none;
+    }
+    th{
+        border-top:none;
+    }
+}
+
 @import "fancybox-override";
 @import "other/mobile";
 @import "joining-chklist";

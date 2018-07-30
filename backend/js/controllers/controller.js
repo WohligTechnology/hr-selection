@@ -1299,7 +1299,7 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
         //////////////////////////////////////
         $scope.MainCategory = [{
             Category: "Karan",
-            Subcategory: [{
+            Subcategory : [{
                 name: 'subcategory1',
             }, {
                 name: 'subcategory2',
@@ -1307,9 +1307,31 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
                 name: 'subcategory3',
             }, {
                 name: 'subcategory4',
+            },
+            {
+                name: 'subcategory5',
             }]
+          
 
-        }];
+        },
+        // {
+        //     Category: "kishori",
+        //    Subcategory : [{
+        //         name: 'subcategory1',
+        //     }, {
+        //         name: 'subcategory2',
+        //     }, {
+        //         name: 'subcategory3',
+        //     }, {
+        //         name: 'subcategory4',
+        //     },
+        //     {
+        //         name: 'subcategory5',
+        //     }]
+        // }
+    
+    ];
+     
 
         $scope.Addcat = function () {
             var CategoryData = {};

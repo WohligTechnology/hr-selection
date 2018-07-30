@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col">
-        <h5 class="text-left font-Lato-Bold">
+        <h5 class="text-left ">
             <button type="button" class="btn btn-primary my-2 " ng-click="ChecklistModal()">Create Checklist</button>
         </h5>
     </div>
@@ -18,176 +18,44 @@
         </div>
     </div>
 </div>
-<table class="table">
+<div class="w60 representative-tb">
+<table class="table chk-list-tb">
     <thead>
         <tr>
             <th style="text-align:center;">Sr No : </th>
-            <th style="text-align:center;">Activity : </th>
-            <th style="text-align:center;">Representative 1: </th>
-            <th style="text-align:center;">Representative 2: </th>
-            <th style="text-align:center;">Completed (Y/N) : </th>
-            <th style="text-align:center;">Comments :</th>
-        </tr>
+            <th colspan="2" class="text-center">Activity : </th>
+          </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row" style="text-align:center;"> 1</th>
-            <th scope="row">Category name 1</th>
-            <td align="center">
-               
-            </td>
-            <td align="center"> </td>
-            <td align="center">  </td>
-            <td align="center"> </td>
+        <tr ng-repeat="cat in MainCategory">
+            <th  style="text-align:center;"> 1</th>
+            <th  rowspan="3" class=" text-center">{{cat.Category}}</th>
+            <td><p ng-repeat="sub in cat.Subcategory">{{sub.name}}</p></td>
         </tr>
-        <tr>
-            <th scope="row"> </th>
-            <td align="left">Subcategory Name 1</td>
-            <td align="center">
-                 <select>
-                        <option>Select</option>
-                        <option>Khushboo</option>
-                 </select>
-            </td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center">  <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle2" class=" switch-mini switch-success "></toggle-switch></td>
-            <td align="center"><textarea rows="2" ></textarea> </td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td align="left">Subcategory Name 2</td>
-            <td align="center">
-                 <select>
-                <option>Select</option>
-                <option>Khushboo</option>
-          </select>
-        </td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle3" class=" switch-mini switch-success "></toggle-switch></td>
-            <td align="center"><textarea rows="2" ></textarea> </td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td align="left">Subcategory Name 3</td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle12" class=" switch-mini switch-success "></toggle-switch></td>
-            <td align="center"><textarea rows="2" ></textarea> </td>
 
-        </tr>
-        <tr>
-            <th scope="row" style="text-align:center;"> 2</th>
-            <th scope="row">Category name 2</th>
-            <td align="center"> </td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"> </td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td align="left">Subcategory Name 1</td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center">  <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle4" class=" switch-mini switch-success "></toggle-switch></td>
-            <td align="center"><textarea rows="2" ></textarea> </td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td align="left">Subcategory Name 2</td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center">  <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle10" class=" switch-mini switch-success "></toggle-switch></td>
-            <td align="center"><textarea rows="2" ></textarea> </td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td align="left">Subcategory Name 3</td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle5" class=" switch-mini switch-success "></toggle-switch></td>
-            <td align="center"><textarea rows="2" ></textarea> </td>
-
-        </tr>
-        <tr>
-            <th scope="row" style="text-align:center;"> 3</th>
-            <th scope="row">Category name 3</th>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"> </td>
-            <td align="center"></td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td align="left">Subcategory Name 1</td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center">  <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle6" class=" switch-mini switch-success "></toggle-switch></td>
-            <td align="center"><textarea rows="2" ></textarea> </td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td align="left">Subcategory Name 2</td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle7" class=" switch-mini switch-success "></toggle-switch></td>
-            <td align="center"><textarea rows="2" ></textarea> </td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td align="left">Subcategory Name 2</td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <select>
-                    <option>Select</option>
-                    <option>Khushboo</option>
-              </select></td>
-            <td align="center"> <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle8" class=" switch-mini switch-success "></toggle-switch></td>
-            <td align="center"><textarea rows="2" ></textarea> </td>
-
-        </tr>
+      
+        <!-- <tr>
+                <th scope="row" style="text-align:center;"> 1</th>
+                <th  rowspan="4" class=" text-center">Category name 1</th>
+                <td >Subcategory Name 1</td>
+          </tr>
+            <tr>
+                <th scope="row"> </th>
+                <td >Subcategory Name 1</td>
+           </tr>
+            <tr>
+                <th scope="row"></th>
+                <td align="left">Subcategory Name 2</td>
+              
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td align="left">Subcategory Name 3</td>
+             
+    
+            </tr> -->
+      
+       
     </tbody>
 </table>
+</div>
