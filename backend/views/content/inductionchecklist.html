@@ -1,11 +1,11 @@
 <div class="row">
     <div class="col">
-        <h5 class="text-left ">
-            <button type="button" class="btn btn-primary my-2 " ng-click="ChecklistModal()">Create Checklist</button>
+        <h5 class="text-left ml-3">
+            <button type="button" class="btn btn-primary my-2 font-weight-bold" ng-click="ChecklistModal()">Add Checklist</button>
         </h5>
     </div>
     <div class="col">
-        <div class="d-flex justify-content-end py-2">
+        <div class="d-flex justify-content-end py-2 mr-3">
             <form class="search-form mr-form">
                 <input type="text" placeholder="Search Here...">
                 <button type="submit">
@@ -18,44 +18,44 @@
         </div>
     </div>
 </div>
-<div class="w60 representative-tb">
-<table class="table chk-list-tb">
-    <thead>
-        <tr>
-            <th style="text-align:center;">Sr No : </th>
-            <th colspan="2" class="text-center">Activity : </th>
-          </tr>
-    </thead>
-    <tbody>
-        <tr ng-repeat="cat in MainCategory">
-            <th  style="text-align:center;"> 1</th>
-            <th  rowspan="3" class=" text-center">{{cat.Category}}</th>
-            <td><p ng-repeat="sub in cat.Subcategory">{{sub.name}}</p></td>
-        </tr>
-
-      
-        <!-- <tr>
-                <th scope="row" style="text-align:center;"> 1</th>
-                <th  rowspan="4" class=" text-center">Category name 1</th>
-                <td >Subcategory Name 1</td>
-          </tr>
+<div class="representative-tb custom-tb-bg">
+    <table class="table">
+        <thead>
             <tr>
-                <th scope="row"> </th>
-                <td >Subcategory Name 1</td>
-           </tr>
+                <th >Sr No : </th>
+                <th>Category : </th>
+                <th>Subcategory : </th>
+                <th>Action : </th>
+            </tr>
+        </thead>
+        <tbody>
             <tr>
-                <th scope="row"></th>
-                <td align="left">Subcategory Name 2</td>
-              
+                <td> 1</td>
+                <td>Pre-Joining</td>
+                <td><p>Agree date of joining</p>
+                    <p>Agree date of joining</p></td>
+                <td><span ng-click="DeleteModal()"><i class="fas fa-trash-alt delete-icon" ></i></span>
+                   <span ng-click="EditModal()"><i class="fas fa-pencil-alt ml-1 edit-icon"></i></span> 
+                </td>
+            </tr>
+          <tr>
+                <td> 2</td>
+                <td> Form to be completed-send to joinee</td>
+                <td><p>Agree date of joining</p>
+                    <p>Agree date of joining</p></td>
+                    <td><span ng-click="DeleteModal()"><i class="fas fa-trash-alt delete-icon"  ng-click="DeleteModal()"></i></span>
+                        <span ng-click="EditModal()"><i class="fas fa-pencil-alt ml-1 edit-icon"></i></span>
+                    </td>
             </tr>
             <tr>
-                <th scope="row"></th>
-                <td align="left">Subcategory Name 3</td>
-             
-    
-            </tr> -->
-      
-       
-    </tbody>
-</table>
+                <td> 2</td>
+                <td> Form to be completed-send to joinee</td>
+                <td><p>Agree date of joining</p>
+                    <p>Agree date of joining</p></td>
+                    <td><span ng-click="DeleteModal()"><i class="fas fa-trash-alt delete-icon"  ng-click="DeleteModal()"></i></span>
+                        <span><i class="fas fa-pencil-alt ml-1 edit-icon"></i></span>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
 </div>

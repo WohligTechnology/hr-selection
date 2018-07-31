@@ -1639,14 +1639,25 @@ header.side-header {
 
 // create chklist
 
-.chk-list-tb{
-    td{
-        border-top:none;
-    }
-    th{
-        border-top:none;
-    }
+.custom-tb-bg{
+    background: $white;
+    padding: 30px;
+    margin: 20px 10px;
+    border-radius: 10px;
 }
+.delete-icon{
+    background: $red;
+    color: white;
+    font-size: 21px;
+    padding: 4px;
+}
+.edit-icon{
+    background: $green;
+    color: white;
+    font-size: 21px;
+    padding: 4px;
+}
+
 
 @import "fancybox-override";
 @import "other/mobile";

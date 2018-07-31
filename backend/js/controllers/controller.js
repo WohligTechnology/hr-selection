@@ -1232,6 +1232,29 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
                 size: 'lg',
             });
         }
+         //delete modaal
+
+         $scope.DeleteModal = function () {
+            console.log("@@@@@@@@@@@@");
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/delete.html",
+                scope: $scope,
+                size: 'sm',
+            });
+        }
+
+        //edit category
+
+        $scope.EditRespModal = function () {
+            console.log("@@@@@@@@@@@@");
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/edit-representative.html",
+                scope: $scope,
+                size: 'lg',
+            });
+        }
     })
 
     .controller('CreateCandidateCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
@@ -1255,6 +1278,16 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
         $scope.menutitle = NavigationService.makeactive("joining-chklist");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+        
+        $scope.DeleteJModal = function () {
+            console.log("@@@@@@@@@@@@");
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/joining-modal.html",
+                scope: $scope,
+                size: 'sm',
+            });
+        }
      
     })
     .controller('InductionChecklistCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal, $window) {
@@ -1271,6 +1304,31 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
                 size: 'lg',
             });
         }
+
+        //delete modaal
+
+        $scope.DeleteModal = function () {
+            console.log("@@@@@@@@@@@@");
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/delete.html",
+                scope: $scope,
+                size: 'sm',
+            });
+        }
+
+        //edit category
+
+        $scope.EditModal = function () {
+            console.log("@@@@@@@@@@@@");
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/edit-category.html",
+                scope: $scope,
+                size: 'lg',
+            });
+        }
+
         $scope.Subcategory = [{
             Name: "John Hammond",
         }, ];

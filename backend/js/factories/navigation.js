@@ -19,7 +19,7 @@ myApp.factory('NavigationService', function ($http) {
             // icon: "phone"
         },
         {
-            name: "Induction Checklist",
+            name: "Add Checklist",
             classis: "active",
             uisref: "inductionchecklist",
             // icon: "phone"
