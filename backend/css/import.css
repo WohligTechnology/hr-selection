@@ -31632,14 +31632,14 @@ header.side-header {
 
 .comment-area {
   font-size: 12px;
-  background: #bebfbf;
+  background: #e4e4e4;
   color: #000; }
 
 .bg-gray {
   padding: 2px;
   background: #eceeef; }
 
-.joining-chklist .form-group input {
+.checklist-details .form-group input {
   padding: 0;
   height: initial;
   width: initial;
@@ -31647,11 +31647,11 @@ header.side-header {
   display: none;
   cursor: pointer; }
 
-.joining-chklist .form-group label {
+.checklist-details .form-group label {
   position: relative;
   cursor: pointer; }
 
-.joining-chklist .form-group label:before {
+.checklist-details .form-group label:before {
   content: '';
   -webkit-appearance: none;
   background-color: transparent;
@@ -31664,7 +31664,7 @@ header.side-header {
   cursor: pointer;
   margin-right: 5px; }
 
-.joining-chklist .form-group input:checked + label:after {
+.checklist-details .form-group input:checked + label:after {
   content: '';
   display: block;
   position: absolute;
@@ -31675,5 +31675,33 @@ header.side-header {
   border: solid #0e3a81;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg); }
+
+.bg-green {
+  background: #99ea9c;
+  padding-bottom: 3px; }
+
+.emp-data h5 {
+  font-weight: 500;
+  color: #fff;
+  margin-left: 40px; }
+
+.emp-data .mar-r {
+  margin-right: 120px;
+  margin-left: 50px; }
+
+.emp-data label {
+  font-size: 14px;
+  color: #fff; }
+
+.emp-data input {
+  height: 30px;
+  width: 203px;
+  border: none; }
+
+.emp-data select {
+  height: 30px !important;
+  width: 203px !important;
+  border: none !important;
+  font-size: 14px; }
 
 /*# sourceMappingURL=import.css.map */

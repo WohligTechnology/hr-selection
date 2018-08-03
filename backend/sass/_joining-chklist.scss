@@ -120,7 +120,7 @@
 
   .comment-area {
     font-size: 12px;
-    background: #bebfbf;
+    background: rgb(228, 228, 228);
     color: $black;
   }
 
@@ -130,7 +130,7 @@
   }
 
 
-.joining-chklist{
+.checklist-details{
   .form-group input {
     padding: 0;
     height: initial;
@@ -172,4 +172,35 @@
   }
 
 }
- 
+.bg-green{
+  background: #99ea9c;
+  padding-bottom: 3px;
+}
+ .emp-data{
+   h5{
+     font-weight: 500;
+     color: $white;
+     margin-left: 40px;
+   }
+   .mar-r{
+     margin-right: 120px;
+     margin-left: 50px;
+  
+   }
+   label{
+     font-size: 14px;
+     color:$white;
+   }
+   input{
+     height: 30px;
+     width: 203px;
+     border: none;
+   
+   }
+   select{
+    height: 30px !important;
+    width: 203px !important;
+   border: none !important;
+    font-size: 14px;
+  }
+ }

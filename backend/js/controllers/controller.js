@@ -1290,6 +1290,24 @@ myApp.controller('DashboardmainCtrl', function ($scope, TemplateService, Navigat
         }
      
     })
+    .controller('ShowChkListsCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal) {
+        //Used to name the .html file
+        $scope.template = TemplateService.changecontent("show-chklist");
+        $scope.menutitle = NavigationService.makeactive("show-chklist");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        
+        $scope.DeleteJModal = function () {
+            console.log("@@@@@@@@@@@@");
+            $uibModal.open({
+                animation: true,
+                templateUrl: "views/modal/joining-modal.html",
+                scope: $scope,
+                size: 'sm',
+            });
+        }
+     
+    })
     .controller('InductionChecklistCtrl', function ($scope, TemplateService, NavigationService, $timeout, $state, $uibModal, $window) {
         //Used to name the .html file
         $scope.template = TemplateService.changecontent("inductionchecklist");
